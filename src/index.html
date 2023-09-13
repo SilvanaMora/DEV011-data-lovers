@@ -1,11 +1,53 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html>
   <head>
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="main.js" type="module"></script>
   </head>
   <body>
-    <script src="main.js" type="module"></script>
+    <header class="encabezado">
+      <h1> Nombre de la aplicación "IL MONDO"</h1>
+    </header>
+    <main>
+      <h2> ¿Te gustaría conocer información básica de los diferentes países del mundO? </h2>
+      <p>Si deseas realizar una búsqueda específica, puedes apoyarte en el siguiente buscador:</p>
+      <label for= "busqueda-nombre">
+        <input type="text" placeholder="Ingresa el nombre del país que deseas encontrar:"/></label> 
+      <label for = "botón-reestablecer"><button data-testid = "button-clear"> Limpiar </button></label>
+      <!-- <label for= "name" data-testid="select-filter"></label> -->
+      <div>
+        <p>Filtrar por:</p>
+        <label for = "cambiar orden"> <input type = "button" name = "sort-order" multiple id = "desc" value = "Órden alfabético"></input></label>
+        <label for = "continents">Continentes: <select name="continents" data-testid="select-filter"> 
+          <option value  = "America"> África</option>
+          <option value  = "America"> América </option>
+          <option value  = "America"> Asia </option>
+          <option value  = "America"> Europa</option>
+          <option value  = "America"> Oceanía</option>
+        </select></label>
+        <label for = "subregion"> Subregión: <select name="subregion" data-testid="select-sort"> 
+        <option value = "subregion">Norte América</option>
+        <option value = "subregion">Centro América</option>
+        <option value = "subregion">Sudamérica</option>
+        <option value = "subregion">Europa Oriental</option>
+        <option value = "subregion">Europa Occidental</option>
+
+       </select></label>
+       <label for = "languages">Lenguaje: <select name="languages" data-testid="select-something"> 
+        <option value  = "languages"> Español </option>
+        <option value  = "languages"> Inglés </option>
+        <option value  = "languages"> Francés </option>
+        <option value  = "languages"> Portugués </option>
+        <option value  = "languages"> Italiano </option>
+        <option value  = "languages"> Chino </option>
+      </select></label>
+      <label for = "independent"> Status político: <select name="independent" data-testid="select-status"> 
+      <option value = "independent"> Idependiente </option>
+      <option value = "independent"> Otro </option>
+     </select></label>
+      </div>
+    </main>
   </body>
 </html>
