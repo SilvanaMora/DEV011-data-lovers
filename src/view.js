@@ -1,20 +1,15 @@
-// estas funciones son de ejemplo
-
-import countries from "./data/countries/countries.js";
-
 export const renderItems = (data) => {
-  const flags = data.flags;
-  let titlesHTML = "";
 
-countries.forEach(flags => {
-  console.log(flags);
-  
-});
+  let cards = "";
 
-//  countries.forEach(countries.flags.svg) => {
-//     titlesHTML +=
-//     <li> <img src= '$={flags.svg}' /> </li>;
-  }
-  return titlesHTML;
+  data.forEach((element) => {
+    cards += `<li>${element.name.common }
+    <img src=${element.flags.svg}/>
+    </li>`
+  });
 
-
+  //  countries.forEach(countries.flags.svg) => {
+  //     titlesHTML +=
+  //     <li> <img src= '$={flags.svg}' /> </li>;
+  return cards;
+};

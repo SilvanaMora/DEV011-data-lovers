@@ -1,10 +1,12 @@
-<!DOCTYPE html5>
+
+<!DOCTYPE html>
+
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="main.js" type="module"></script>
   </head>
   <body>
     <div class="contenedor">
@@ -29,11 +31,11 @@
        
         <label for = "cambiar orden"> <input type = "button" name = "sort-order" multiple id = "desc" value = "Orden alfabético"></input></label>
         <label for = "continents">Continentes: <select name="continents" data-testid="select-filter"> 
-          <option value="África">África</option>
-          <option value="América">América</option>
+          <option value="Africa">África</option>
+          <option value="America">América</option>
           <option value="Asia">Asia</option>
-          <option value="Europa">Europa</option>
-          <option value="Oceanía">Oceanía</option>
+          <option value="Europe">Europa</option>
+          <option value="Oceania">Oceanía</option>
         </select></label>
         <label for ="subregion">Subregión:<select name="subregion" data-testid="select-sort"> 
         <option value="Norte América">Norte América</option>
@@ -58,14 +60,15 @@
    
     </main>
 
-  <table>
-<section id="contieneTodosLosPaises" style="display:none;">hola</section>  
+<!-- <section id="contieneTodosLosPaises" style="display:none;">hola</section>   -->
 
-<article>
+<article id="root">
 </article>
 
 <footer class ="piePagina"><em> Autoras: Silvana Mora y Angélica Ríos.</em></footer>
 </div> 
+<script src="main.js" type="module"></script>
+
 </body>
 
 </html>
