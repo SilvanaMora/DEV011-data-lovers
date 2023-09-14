@@ -1,8 +1,19 @@
-import { exampledata } from './dataFunctions.js';
-import { renderItems } from './view.js';
+// import data from './data/countries/countries.js';
+// import {sortData, filtrar,filtrar1, calcular} from "./dataFunctions.js";
+// import {renderItems} from './view.js';
+// console.log(data);
 
-// import data from './data/lol/lol.js';
-import data from './data/countries.js';
-// import data from './data/rickandmorty/rickandmorty.js';
+const inputText = document.getElementById("textoIngresado");
 
-console.log(example, renderItems, data);
+const botonBuscar = document.getElementById("Buscar");
+botonBuscar.addEventListener("click", buscarPais);
+function buscarPais() {
+  inputText.value = "";
+}
+const botonLimpiar = document.getElementById("Limpiar");
+botonLimpiar.addEventListener("click", limpiarTexto);
+function limpiarTexto() {
+  inputText.value = ""; // Establece el valor del input en una cadena vacía para borrar el texto.
+}
+
+

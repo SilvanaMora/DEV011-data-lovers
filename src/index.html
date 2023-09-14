@@ -7,47 +7,65 @@
     <script src="main.js" type="module"></script>
   </head>
   <body>
-    <header class="encabezado">
-      <h1> Nombre de la aplicación "IL MONDO"</h1>
+    <div class="contenedor">
+  <header id="headerHtml" class="encabezado">
+    <div class="logo-container">
+    <h1>"IL MONDO LOVERS"</h1>
+    </div>
     </header>
     <main>
+  
       <h2> ¿Te gustaría conocer información básica de los diferentes países del mundO? </h2>
       <p>Si deseas realizar una búsqueda específica, puedes apoyarte en el siguiente buscador:</p>
-      <label for= "busqueda-nombre">
-        <input type="text" placeholder="Ingresa el nombre del país que deseas encontrar:"/></label> 
-      <label for = "botón-reestablecer"><button data-testid = "button-clear"> Limpiar </button></label>
+      <label for = "busqueda-nombre">
+        <input type ="text" id = "textoIngresado" placeholder="Ingresa el nombre del país:"/></label> 
+        <button id = "Buscar"> Buscar </button>
+        <button id = "Limpiar"> Limpiar </button>
+     
+
       <!-- <label for= "name" data-testid="select-filter"></label> -->
       <div>
         <p>Filtrar por:</p>
-        <label for = "cambiar orden"> <input type = "button" name = "sort-order" multiple id = "desc" value = "Órden alfabético"></input></label>
+       
+        <label for = "cambiar orden"> <input type = "button" name = "sort-order" multiple id = "desc" value = "Orden alfabético"></input></label>
         <label for = "continents">Continentes: <select name="continents" data-testid="select-filter"> 
-          <option value  = "America"> África</option>
-          <option value  = "America"> América </option>
-          <option value  = "America"> Asia </option>
-          <option value  = "America"> Europa</option>
-          <option value  = "America"> Oceanía</option>
+          <option value="África">África</option>
+          <option value="América">América</option>
+          <option value="Asia">Asia</option>
+          <option value="Europa">Europa</option>
+          <option value="Oceanía">Oceanía</option>
         </select></label>
-        <label for = "subregion"> Subregión: <select name="subregion" data-testid="select-sort"> 
-        <option value = "subregion">Norte América</option>
-        <option value = "subregion">Centro América</option>
-        <option value = "subregion">Sudamérica</option>
-        <option value = "subregion">Europa Oriental</option>
-        <option value = "subregion">Europa Occidental</option>
-
+        <label for ="subregion">Subregión:<select name="subregion" data-testid="select-sort"> 
+        <option value="Norte América">Norte América</option>
+        <option value ="Centro América">Centro América</option>
+        <option value ="Sudamérica">Sudamérica</option>
+        <option value = "Europa Oriental">Europa Oriental</option>
+        <option value = "Europa Occidental">Europa Occidental</option>
        </select></label>
        <label for = "languages">Lenguaje: <select name="languages" data-testid="select-something"> 
-        <option value  = "languages"> Español </option>
-        <option value  = "languages"> Inglés </option>
-        <option value  = "languages"> Francés </option>
-        <option value  = "languages"> Portugués </option>
-        <option value  = "languages"> Italiano </option>
-        <option value  = "languages"> Chino </option>
+        <option value  = "Español"> Español </option>
+        <option value  = "Inglés"> Inglés </option>
+        <option value  = "Francés"> Francés </option>
+        <option value  = "Portugués"> Portugués </option>
+        <option value  = "Italiano"> Italiano </option>
+        <option value  = "Chino"> Chino </option>
       </select></label>
       <label for = "independent"> Status político: <select name="independent" data-testid="select-status"> 
-      <option value = "independent"> Idependiente </option>
-      <option value = "independent"> Otro </option>
+      <option value = "Idependiente"> Idependiente </option>
+      <option value = "Otro"> Otro </option>
      </select></label>
-      </div>
+      </div> 
+   
     </main>
-  </body>
+
+  <table>
+<section id="contieneTodosLosPaises" style="display:none;">hola</section>  
+
+<article>
+</article>
+
+<footer class ="piePagina"><em> Autoras: Silvana Mora y Angélica Ríos.</em></footer>
+</div> 
+</body>
+
 </html>
