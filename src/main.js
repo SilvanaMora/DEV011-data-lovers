@@ -9,6 +9,7 @@ const inputText = document.getElementById("textoIngresado");
 
 const botonBuscar = document.getElementById("Buscar");
 botonBuscar.addEventListener("click", buscarPais);
+
 function buscarPais() {
   inputText.value = "";
 }

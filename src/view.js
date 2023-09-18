@@ -3,13 +3,12 @@ export const renderItems = (data) => {
   let cards = "";
 
   data.forEach((element) => {
-    cards += `<li>${element.name.common }
-    <img src=${element.flags.svg}/>
-    </li>`
+    cards += `  <div class="card">
+    <h2>${element.name.common}</h2>
+    <p>Capital: ${element.capital}</p>
+    <img src="${element.flags.svg}" alt="Bandera de ${element.name.common}" />
+  </div> `
+   
   });
-
-  //  countries.forEach(countries.flags.svg) => {
-  //     titlesHTML +=
-  //     <li> <img src= '$={flags.svg}' /> </li>;
   return cards;
 };
