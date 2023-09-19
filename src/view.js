@@ -1,6 +1,14 @@
-// estas funciones son de ejemplo
+export const renderItems = (data) => {
 
-export const renderItems = () => {
-  return 'example';
+  let cards = "";
+
+  data.forEach((element) => {
+    cards += `  <div class="card">
+    <h2>${element.name.common}</h2>
+    <p>Capital: ${element.capital}</p>
+    <img src="${element.flags.svg}" alt="Bandera de ${element.name.common}" />
+  </div> `
+   
+  });
+  return cards;
 };
-
