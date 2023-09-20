@@ -2,16 +2,12 @@ import data from './data/countries/countries.js';
 import { renderItems } from "./view.js";
 
 
-document.querySelector("#inicio").addEventListener("click", function() {
-  document.querySelector("#portada").style.opacity = 0;
-
-  
-  document.querySelector("#tituloPag2").style.opacity = 1;
-  document.querySelector("#contenedorDeFormulario").style.opacity = 1;
-  document.querySelector("#contenedorDeFiltrado").style.opacity = 1;
-  document.querySelector("#contenedorDeCartas").style.opacity = 1;
-  document.querySelector("#piePagina").style.opacity = 1;
-});
+document.getElementById ("inicio").onclick = function () {
+ document.getElementById("portada2").style.display = "none";
+ document.getElementById("portada").style.display = "null";
+ document.getElementById("contenedorFunciones").style.display = "null";
+ document.getElementById("fotter").style.display = "null";
+}
 
 const allData = renderItems(data.countries)
 document.querySelector('#root').innerHTML = allData

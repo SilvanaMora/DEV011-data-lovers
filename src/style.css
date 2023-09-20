@@ -1,13 +1,11 @@
 
 #portada {
-  opacity: 1;
   position: relative; /* Establece la posición relativa para el contenedor de la portada */
   z-index: 2; /* siempre arriba */
 }
 
 #tituloPag2{
 
-  opacity: 0;
   position: absolute; /* Establece la posición absoluta para elementos con opacidad 1 */
   top: 0; /* Coloca los elementos en la parte superior */
   left: 0; /* Coloca los elementos en la parte izquierda */
@@ -16,11 +14,6 @@
   /* transition: opacity 0.5s; Transición de opacidad suave durante 0.5 segundos */
 }
 
-#contenedorDeFormulario,
-#contenedorDeFiltrado,
-#contenedorDeCartas {
-    opacity: 0;
-}
 
 #titulo {
     text-align: center;
