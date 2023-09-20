@@ -1,4 +1,59 @@
 
+#portada {
+  opacity: 1;
+  position: relative; /* Establece la posición relativa para el contenedor de la portada */
+  z-index: 2; /* siempre arriba */
+}
+
+#tituloPag2{
+
+  opacity: 0;
+  position: absolute; /* Establece la posición absoluta para elementos con opacidad 1 */
+  top: 0; /* Coloca los elementos en la parte superior */
+  left: 0; /* Coloca los elementos en la parte izquierda */
+  width: 100%; /* Ancho del 100% para ocupar todo el espacio */
+  z-index: 1; /* Asegura que los elementos con opacidad 1 estén detrás de la portada */
+  /* transition: opacity 0.5s; Transición de opacidad suave durante 0.5 segundos */
+}
+
+#contenedorDeFormulario,
+#contenedorDeFiltrado,
+#contenedorDeCartas {
+    opacity: 0;
+}
+
+#titulo {
+    text-align: center;
+    
+  }
+  
+  #subtitulo {
+    text-align: center;
+  }
+
+  #inicio {
+    background-color: rgb(173, 51, 163);
+      color: white;
+      font-size: 20px;
+      padding: 9px;
+      border: 3 px solid;
+      cursor: pointer;
+      text-align: center;
+    
+    }
+    
+    #gifPaises {
+        margin: 0 auto;
+        display: flex;
+      
+        width: 300px; /* Cambia el valor a la anchura deseada */
+        height: auto; /* Mantén la relación de aspecto original */
+      }
+
+      #contenedorPortada {
+        text-align: center;
+      }
+      
 .encabezado {
   background-image: url('https://viejosmapas.com/wp-content/uploads/2020/10/mapamundi.jpg');
   background-size: cover; /* Ajusta la imagen para cubrir el encabezado */
@@ -6,11 +61,10 @@
   text-align: center; /* Alinea el contenido al centro */
   padding: 30px 0; /* Espaciado vertical */
   color: white; /* Cambia el color del texto en el encabezado */
+ 
+
 }
-
-
-
-.encabezado h1 {
+#contenedorDeFormulario {
     font-size: 36px; /* Tamaño del texto */
     font-family:  monospace;
     color: #ffffff; /* Color del texto (blanco) */
@@ -20,41 +74,45 @@
     text-align: center; /* Alinea el texto al centro */
     border-radius: 10px; /* Borde redondeado */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+    
   }
 
-  .piePagina {
-    background-image: linear-gradient(to bottom, #552905c9, #cf2b5cce);    text-align: right; /* Alinea el texto al centro */
-    padding: 20px; /* Añade espaciado interior */
-    font-family:  monospace;
-    position: absolute; /* Coloca el pie de página en la parte inferior */
-    bottom: 0; /* Alinea el pie de página en la parte inferior */
-    width: 100%; /* Ancho del pie de página igual al ancho de la ventana */
+
+
+  #Limpiar {
+    background-color: rgb(84, 184, 159);
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0 auto;
+    border: 0px solid;
+    cursor: pointer;
+    
   }
   
-  .piePagina em {
-    font-size: x-large;
-    color: rgb(53, 4, 42); /* Cambia el color del texto dentro de <em> */
-  }
 
-  .contenedor {
+  #contenedorDeFiltrado {
     font-size: 16px; /* Tamaño del texto */
     font-family:  monospace;
     background-image: linear-gradient(to bottom, #f1ece7c9, #d9e78ace);    text-align: center; /* Alinea el texto al centro */
-
+ 
   }
-  .contenedor {
+  #contenedorDeFiltrado {
     position: relative; /* Para que el height: 100% funcione correctamente */
     min-height: 100vh; /* Establece la altura mínima al 100% del viewport */
     background-color: #b44545; /* Cambia el color de fondo según tus preferencias */
+  
   }
 
-  .contenedorCartas {
+  
+  .contenedorDeCartas {
   display: flexbox;
   flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a la siguiente fila */
   justify-content: space-between; /* Espaciado uniforme entre las tarjetas en la fila */
   align-content: flex-start; 
   flex-grow: inherit;
   columns: 5;
+ 
 }
 .card {
     width: calc(66.33% - 6px); /* Define el ancho de cada tarjeta (ajustable según las columnas deseadas) */
@@ -65,18 +123,38 @@
   margin: 10px;
   border-radius: 33px;
   text-align: center;
+
 }
   
   .card h2 {
     font-size: 18px;
     margin-bottom: 5px;
+
   }
   
   .card p {
     font-size: 14px;
+    
   }
   
   .card img {
     max-width: 33%;
     height: 33%;
+    
+  }
+
+  .piePagina {
+    background-image: linear-gradient(to bottom, #ebafe6c9, #7e167ece);    text-align: right; /* Alinea el texto al centro */
+    padding: 20px; /* Añade espaciado interior */
+    font-family:  monospace;
+    position: absolute; /* Coloca el pie de página en la parte inferior */
+    bottom: 0; /* Alinea el pie de página en la parte inferior */
+    width: 100%; /* Ancho del pie de página igual al ancho de la ventana */
+    
+  }
+  
+  .piePagina em {
+    font-size: x-large;
+    color: rgb(53, 4, 42); /* Cambia el color del texto dentro de <em> */
+   
   }
