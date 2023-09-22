@@ -1,5 +1,5 @@
 
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html>
   <head>
     <meta charset="utf-8">
@@ -10,27 +10,26 @@
   </head>
   <body>
     <header>
-      <div id ="portada">
-       <article id="contenedorPortada">
+      <div id ="portada" class="contenedor">
+       
           <h1 id="titulo">"Bienvenid@s a Geografía para curiosos"</h1>
           <h2 id="subtitulo"> A continuación encontrarás datos interesantes de cualquier país de tu interés </h2>
            <div class = "loggin" id="portada2" ></div>
            <img id="gifPaises" src="https://upload.wikimedia.org/wikipedia/commons/9/96/Mundo_hecho_de_Banderas.gif">
            <button id="inicio"> Iniciar </button>
-           </div>
-        </div>
-    
-<div class="wrapper" id"contenedorFunciones" style="display:none">
-    <h1 id="tituloPag2">"IL MONDO LOVERS"</h1>
-  </article>
+          </div>
+       
     </header>
 
+<div class="wrapper contenedor" id="contenedorFunciones" style="display:none">
+    <h1 id="tituloPag2">"IL MONDO LOVERS"</h1>
+      
     <div id="contenedorDeFormulario">
       <h2 class = "subtituloPag2">¿Te gustaría conocer información básica de los diferentes países del mundO?</h2> 
       <p>Si deseas realizar una búsqueda específica, puedes apoyarte en el siguiente buscador:</p>
       <label for = "busqueda-nombre">
         <input type ="text" id = "textoIngresado" placeholder="Ingresa el nombre del país:"/></label> 
-        <button id = "buscar"> Buscar </button>
+        <!-- <button id = "buscar"> Buscar </button> -->
         <button id = "limpiar"> Limpiar </button>
     </div>
 
@@ -38,13 +37,21 @@
       <nav id="contenedorDeFiltrado">
         <p>Filtrar por:</p>
        
-        <label for = "cambiar orden"> <input type = "button" name = "sort-order" multiple id = "desc" value = "Orden alfabético"></input></label>
-        <label for = "continents">Continentes: <select name="continents" data-testid="select-filter"> 
+        <label for = "asc-desc"> 
+          <select name="asc-desc" id="select-filter" data-testid="select-filter">
+            <option value="">Selecione una opción:</option>
+            <option value="asc">  A - Z </option>
+            <option value="desc"> Z - A </option>
+          </select>
+        </label>
+        <label for = "continents">Continentes: <select name="continents" id="continents" data-testid="select-filter"> 
+          <option value="nada">Selecione un Continente:</option>
           <option value="Africa">África</option>
           <option value="America">América</option>
           <option value="Asia">Asia</option>
           <option value="Europe">Europa</option>
           <option value="Oceania">Oceanía</option>
+          <option value="Antarctica">Antartica</option>
         </select></label>
         <label for ="subregion">Subregión:<select name="subregion" data-testid="select-sort"> 
         <option value="Norte América">Norte América</option>
@@ -60,20 +67,19 @@
         <option value  = "Portugués"> Portugués </option>
         <option value  = "Italiano"> Italiano </option>
         <option value  = "Chino"> Chino </option>
+        </select></label>
+        <label for = "independent"> Status político: <select name="independent" data-testid="select-status"> 
+        <option value = "Idependiente"> Idependiente </option>
+        <option value = "Otro"> Otro </option>
       </select></label>
-      <label for = "independent"> Status político: <select name="independent" data-testid="select-status"> 
-      <option value = "Idependiente"> Idependiente </option>
-      <option value = "Otro"> Otro </option>
-     </select></label>
       </nav> 
-    <br>
-<div id ="contenedorDeCartas">
-<!-- <section id="contieneTodosLosPaises" style="display:none;">hola</section>   -->
-<section class="claseContenedorDeCartas"> 
-<article id="root">
-</article>
-</section> 
-</div>
+  <div id ="contenedorDeCartas">
+  <section id="porcentajes"></section>   
+  <section > 
+  <article id="root" class="claseContenedorDeCartas">
+  </article>
+  </section> 
+  </div>
 </div>
 <div id="fotter">
 <footer id ="piePagina"><em> Autoras: Silvana Mora y Angélica Ríos.</em></footer>

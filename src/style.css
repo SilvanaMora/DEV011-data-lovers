@@ -1,19 +1,17 @@
 
 #portada {
-  position: relative; /* Establece la posición relativa para el contenedor de la portada */
-  z-index: 2; /* siempre arriba */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #tituloPag2{
 
-  position: absolute; /* Establece la posición absoluta para elementos con opacidad 1 */
-  top: 0; /* Coloca los elementos en la parte superior */
-  left: 0; /* Coloca los elementos en la parte izquierda */
-  width: 100%; /* Ancho del 100% para ocupar todo el espacio */
-  z-index: 1; /* Asegura que los elementos con opacidad 1 estén detrás de la portada */
-  /* transition: opacity 0.5s; Transición de opacidad suave durante 0.5 segundos */
-}
+background-image: url('https://rea.ceibal.edu.uy/elp/el-mundo-del-globo-al-plano/map-of-the-world-2401458_1280.jpg');
 
+ 
+}
 
 #titulo {
     text-align: center;
@@ -32,44 +30,14 @@
       border: 3 px solid;
       cursor: pointer;
       text-align: center;
-    
     }
     
     #gifPaises {
         margin: 0 auto;
-        display: flex;
-      
         width: 300px; /* Cambia el valor a la anchura deseada */
         height: auto; /* Mantén la relación de aspecto original */
       }
-
-      #contenedorPortada {
-        text-align: center;
-      }
       
-.encabezado {
-  background-image: url('https://viejosmapas.com/wp-content/uploads/2020/10/mapamundi.jpg');
-  background-size: cover; /* Ajusta la imagen para cubrir el encabezado */
-  background-position: center; /* Centra la imagen horizontalmente */
-  text-align: center; /* Alinea el contenido al centro */
-  padding: 30px 0; /* Espaciado vertical */
-  color: white; /* Cambia el color del texto en el encabezado */
- 
-
-}
-#contenedorDeFormulario {
-    font-size: 36px; /* Tamaño del texto */
-    font-family:  monospace;
-    color: #ffffff; /* Color del texto (blanco) */
-    background-color: #915f14; /* Color de fondo llamativo (por ejemplo, naranja) */
-    padding: 10px 20px; /* Espaciado interno */
-    font-weight: bold; /* Texto en negrita */
-    text-align: center; /* Alinea el texto al centro */
-    border-radius: 10px; /* Borde redondeado */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
-    
-  }
-
 
 
   #Limpiar {
@@ -90,32 +58,46 @@
     background-image: linear-gradient(to bottom, #f1ece7c9, #d9e78ace);    text-align: center; /* Alinea el texto al centro */
  
   }
+  #titulo{
+    font-size: 16px; /* Tamaño del texto */
+    font-family:  monospace;
+
+  }
+  #contenedorDeFormulario {
+    font-size: 16px; /* Tamaño del texto */
+    font-family:  monospace;
+    background-image: linear-gradient(to bottom, #f1ece7c9, #d9e78ace);    text-align: center; /* Alinea el texto al centro */
+ 
+  }
   #contenedorDeFiltrado {
-    position: relative; /* Para que el height: 100% funcione correctamente */
-    min-height: 100vh; /* Establece la altura mínima al 100% del viewport */
+   /* position: relative; Para que el height: 100% funcione correctamente */
+    /*min-height:;  Establece la altura mínima al 100% del viewport */
     background-color: #b44545; /* Cambia el color de fondo según tus preferencias */
   
   }
 
   
   .contenedorDeCartas {
-  display: flexbox;
-  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a la siguiente fila */
-  justify-content: space-between; /* Espaciado uniforme entre las tarjetas en la fila */
-  align-content: flex-start; 
-  flex-grow: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Espaciado uniforme entre las tarjetas en la fila */ 
   columns: 5;
+  flex-direction: column;
+  align-items: center;
  
 }
 .card {
-    width: calc(66.33% - 6px); /* Define el ancho de cada tarjeta (ajustable según las columnas deseadas) */
+    width: 150px; /* Define el ancho de cada tarjeta (ajustable según las columnas deseadas) */
   margin-bottom: 5px;
-  height: 150px; /* Reduce la altura de la tarjeta */
-  border: 1px solid #963d3d;
-  padding: 20px;
+  height: 250px; /* Reduce la altura de la tarjeta */
+  border: 1px solid #f4f6f8;
+  background-color: #99c0ee;
+  padding: 10px;
   margin: 10px;
   border-radius: 33px;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 
 }
   
@@ -131,11 +113,21 @@
   }
   
   .card img {
-    max-width: 33%;
-    height: 33%;
+    max-width: 90px;
+    height: 60px;
     
   }
 
+  .marcoCartas {
+    width: 200px; /* Define el ancho de cada tarjeta (ajustable según las columnas deseadas) */
+    margin-bottom: 5px;
+    margin-top: 50px;
+    height: 300px; /* Reduce la altura de la tarjeta */
+    border: 1px solid #e4e40c;
+    background-color: #f7ed67;
+    padding: 5px 3px 5px 5px;
+    text-align: center;
+  }
   .piePagina {
     background-image: linear-gradient(to bottom, #ebafe6c9, #7e167ece);    text-align: right; /* Alinea el texto al centro */
     padding: 20px; /* Añade espaciado interior */
@@ -150,4 +142,14 @@
     font-size: x-large;
     color: rgb(53, 4, 42); /* Cambia el color del texto dentro de <em> */
    
+  }
+
+  .claseContenedorDeCartas {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between; 
+    columns: 5;   
+    flex-direction: row;
+    
+    
   }
