@@ -38,9 +38,22 @@ background-image: url('https://rea.ceibal.edu.uy/elp/el-mundo-del-globo-al-plano
         height: auto; /* Mantén la relación de aspecto original */
       }
       
+.contenedorBotones {
+  text-align: center;
+}
 
-
-  #Limpiar {
+  #limpiar {
+    background-color: rgb(133, 33, 228);
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0 auto;
+    border: 0px solid;
+    cursor: pointer;
+    
+  }
+  
+  #buscar {
     background-color: rgb(84, 184, 159);
     color: white;
     font-size: 20px;
@@ -72,7 +85,7 @@ background-image: url('https://rea.ceibal.edu.uy/elp/el-mundo-del-globo-al-plano
   #contenedorDeFiltrado {
    /* position: relative; Para que el height: 100% funcione correctamente */
     /*min-height:;  Establece la altura mínima al 100% del viewport */
-    background-color: #b44545; /* Cambia el color de fondo según tus preferencias */
+    background-color: #35b346; /* Cambia el color de fondo según tus preferencias */
   
   }
 
