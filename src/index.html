@@ -29,7 +29,7 @@
       <p>Si deseas realizar una búsqueda específica, puedes apoyarte en el siguiente buscador:</p>
       <label for = "busqueda-nombre">
         <input type ="text" id = "textoIngresado" placeholder="Ingresa el nombre del país:"/></label> 
-        <!-- <button id = "buscar"> Buscar </button> -->
+        <button id = "buscar"> Buscar </button>
         <button id = "limpiar"> Limpiar </button>
     </div>
 
@@ -38,13 +38,14 @@
         <p>Filtrar por:</p>
        
         <label for = "asc-desc"> 
-          <select name="asc-desc" id="select-filter" data-testid="select-filter">
+          <select name="asc-desc" id="orden-ascendente"      data-testid="select-sort">
             <option value="">Selecione una opción:</option>
             <option value="asc">  A - Z </option>
             <option value="desc"> Z - A </option>
           </select>
         </label>
-        <label for = "continents">Continentes: <select name="continents" id="continents" data-testid="select-filter"> 
+        
+        <label for = "continents">Continentes: <select name="continents" id="continents" data-testid="select-continent"> 
           <option value="nada">Selecione un Continente:</option>
           <option value="Africa">África</option>
           <option value="America">América</option>
@@ -53,14 +54,15 @@
           <option value="Oceania">Oceanía</option>
           <option value="Antarctica">Antartica</option>
         </select></label>
-        <label for ="subregion">Subregión:<select name="subregion" data-testid="select-sort"> 
+        
+        <label for ="subregion">Subregión:<select name="subregion" data-testid="select-subregion"> 
         <option value="Norte América">Norte América</option>
         <option value ="Centro América">Centro América</option>
         <option value ="Sudamérica">Sudamérica</option>
         <option value = "Europa Oriental">Europa Oriental</option>
         <option value = "Europa Occidental">Europa Occidental</option>
        </select></label>
-       <label for = "languages">Lenguaje: <select name="languages" data-testid="select-something"> 
+       <label for = "languages">Lenguaje: <select name="languages" data-testid="select-lenguaje"> 
         <option value  = "Español"> Español </option>
         <option value  = "Inglés"> Inglés </option>
         <option value  = "Francés"> Francés </option>

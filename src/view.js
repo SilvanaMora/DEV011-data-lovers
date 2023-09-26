@@ -1,7 +1,7 @@
 export const renderItems = (data) => {
 
   let cards = "";
-
+  console.log(data);
   data.forEach((element) => {
     cards += ` <div class= "marcoCartas"> <div class="card">
     <h2>${element.name.common}</h2>

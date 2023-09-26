@@ -1,21 +1,29 @@
 // estas funciones son de ejemplo
 
 export const example = () => {
-  return 'example';
+  return "example";
 };
 
 export const anotherExample = () => {
   return [];
 };
 
-<label for="countries"
-           >Orden alfabetico:
-            <select
-              name="countries"
-              data-testid="select-sort"
-              onchange="handleChange()"
-            >
-              <option value="asc">A - Z</option>
-              <option value="desc">Z - A</option>
-            </select></label
-          >
+export function filterData(data, filterBy, selectedValue) {
+  const filteredData = data.filter((pais) => {
+    return pais[filterBy].includes(selectedValue);
+  });
+
+  console.log(filteredData);
+  return filteredData;
+}
+
+
+
+//export const search = (data,name) => {
+  //for (const countries of data.countries.name.common) {
+    //if (name.common === name) {
+      //console.log(countries);
+      //return countries;
+    //}
+  //}
+//}
