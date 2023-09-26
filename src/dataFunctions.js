@@ -1,21 +1,42 @@
-// estas funciones son de ejemplo
+export function filterData(data, filterBy, selectedValue) {
+  const filteredData = data.filter((pais) => {
+    return pais[filterBy].includes(selectedValue);
+  });
+  console.log(filteredData);
+  return filteredData;
+}
 
-export const example = () => {
-  return 'example';
+
+
+export const OrdenAlfa = (data, sortBy, sortOrder) => {
+  const paisesArreglo = data;
+  paisesArreglo.sort ((a,b) => {
+    if (a.name > b.name) {
+      return 1;
+    }
+    if (a.name < b.name) {
+      return -1;
+    }
+    
+    return 0;
+  });
+  console.log (paisesArreglo)
+return paisesArreglo
+
+  };
+ 
+  export const sortData = (ordenar) => {
+  return "example";
 };
 
-export const anotherExample = () => {
+
+  export const anotherExample = () => {
   return [];
 };
+// function BuscarPais() {
 
-<label for="countries"
-           >Orden alfabetico:
-            <select
-              name="countries"
-              data-testid="select-sort"
-              onchange="handleChange()"
-            >
-              <option value="asc">A - Z</option>
-              <option value="desc">Z - A</option>
-            </select></label
-          >
+export const BuscarPais = (data,value) => {
+  const resultado = data.filter((word) => word.name.common.toUpperCase().includes(value.toUpperCase()));
+  return resultado;
+}
+
