@@ -27,25 +27,14 @@
     <div id="contenedorDeFormulario">
       <h2 class = "subtituloPag2">¿Te gustaría conocer información básica de los diferentes países del mundO?</h2> 
       <p>Si deseas realizar una búsqueda específica, puedes apoyarte en el siguiente buscador:</p>
-      <label for = "busqueda-nombre">
-        <input type ="text" id = "textoIngresado" placeholder="Ingresa el nombre del país:"/></label> 
-        <!-- <button id = "buscar"> Buscar </button> -->
-       
-        <button id = "limpiar" data-testid = "select-limpiar"> Limpiar </button>
     </div>
 
       <!-- <label for= "name" data-testid="select-filter"></label> -->
       <nav id="contenedorDeFiltrado">
-        <p>Filtrar por:</p>
-       
-        <label for = "asc-desc"> 
-          <select name="asc-desc" id="asc-desc" data-testid="select-filter">
-            <option value="nada" selected >Seleccione una opción:</option>
-            <option value="asc">  A - Z </option>
-            <option value="desc"> Z - A </option>
-          </select>
-        </label>
-        <label for = "continents">Continentes: <select name="continents" id="continents" data-testid="select-filter" > 
+        <label for = "busqueda-nombre"> Búsqueda por nombre:
+          <input type ="text" id = "textoIngresado" placeholder="Ingresa el nombre del país:"/></label> 
+          <!-- <button id = "buscar"> Buscar </button> -->
+        <label for = "continents">Filtro por Continentes: <select name="continents" id="continents" data-testid="select-filter" > 
           <option value="nada"> Selecciona un continente </option>
           <option value="Africa">África</option>
           <option value="America">América</option>
@@ -54,25 +43,14 @@
           <option value="Oceania">Oceanía</option>
           <option value="Antarctica">Antartica</option>
         </select></label>
-        <label for ="subregion">Subregión:<select name="subregion" data-testid="select-sort"> 
-        <option value="Norte América">Norte América</option>
-        <option value ="Centro América">Centro América</option>
-        <option value ="Sudamérica">Sudamérica</option>
-        <option value = "Europa Oriental">Europa Oriental</option>
-        <option value = "Europa Occidental">Europa Occidental</option>
-       </select></label>
-       <label for = "languages">Lenguaje: <select name="languages" data-testid="select-something"> 
-        <option value  = "Español"> Español </option>
-        <option value  = "Inglés"> Inglés </option>
-        <option value  = "Francés"> Francés </option>
-        <option value  = "Portugués"> Portugués </option>
-        <option value  = "Italiano"> Italiano </option>
-        <option value  = "Chino"> Chino </option>
-        </select></label>
-        <label for = "independent"> Status político: <select name="independent" data-testid="select-status"> 
-        <option value = "Idependiente"> Idependiente </option>
-        <option value = "Otro"> Otro </option>
-      </select></label>
+        <label for = "asc-desc"> 
+          <select name="asc-desc" id="asc-desc" data-testid="select-filter">
+            <option value="nada" selected >Ordenar</option>
+            <option value="asc">  A - Z </option>
+            <option value="desc"> Z - A </option>
+          </select>
+        </label>
+        <button id = "limpiar" data-testid = "select-limpiar"> Limpiar </button>
       </nav> 
   <div id ="contenedorDeCartas">
   <section id="porcentajes"></section>   
