@@ -30,7 +30,8 @@
       <label for = "busqueda-nombre">
         <input type ="text" id = "textoIngresado" placeholder="Ingresa el nombre del país:"/></label> 
         <!-- <button id = "buscar"> Buscar </button> -->
-        <button id = "limpiar"> Limpiar </button>
+       
+        <button id = "limpiar" data-testid = "select-limpiar"> Limpiar </button>
     </div>
 
       <!-- <label for= "name" data-testid="select-filter"></label> -->
@@ -38,14 +39,14 @@
         <p>Filtrar por:</p>
        
         <label for = "asc-desc"> 
-          <select name="asc-desc" data-testid="select-filter">
-            <option value="" selected >Seleccione una opción:</option>
+          <select name="asc-desc" id="asc-desc" data-testid="select-filter">
+            <option value="nada" selected >Seleccione una opción:</option>
             <option value="asc">  A - Z </option>
             <option value="desc"> Z - A </option>
           </select>
         </label>
-        <label for = "continents">Continentes: <select name="continents" id="continents" data-testid="select-filter"> 
-          <option value="nada">Selecione un Continente:</option>
+        <label for = "continents">Continentes: <select name="continents" id="continents" data-testid="select-filter" > 
+          <option value="nada"> Selecciona un continente </option>
           <option value="Africa">África</option>
           <option value="America">América</option>
           <option value="Asia">Asia</option>

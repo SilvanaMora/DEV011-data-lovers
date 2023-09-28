@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #052c31;
 }
 
 #tituloPag2{
@@ -15,21 +16,33 @@ background-image: url('https://rea.ceibal.edu.uy/elp/el-mundo-del-globo-al-plano
 
 #titulo {
     text-align: center;
+    font-size: 2em;
+    color: white;
     
   }
   
   #subtitulo {
     text-align: center;
+    font-size: 1em;
+    color: white;
   }
 
+  #inicio:hover {
+    background-color: rgb(106, 204, 41);/* Cambia el color a tu elección cuando el cursor esté sobre el botón */
+  }
   #inicio {
-    background-color: rgb(173, 51, 163);
+    background-color: rgba(100, 72, 10, 0.733);
+    
       color: white;
-      font-size: 20px;
-      padding: 9px;
-      border: 3 px solid;
+      font-size: 3em;
+      padding: 0.3em;
+      border: 3 em;
+      border-radius: 9%; 
+      border-color: #ec9a1eb6;
       cursor: pointer;
       text-align: center;
+      margin-bottom: 2em;
+      
     }
     
     #gifPaises {
@@ -141,21 +154,8 @@ background-image: url('https://rea.ceibal.edu.uy/elp/el-mundo-del-globo-al-plano
     padding: 5px 3px 5px 5px;
     text-align: center;
   }
-  .piePagina {
-    background-image: linear-gradient(to bottom, #ebafe6c9, #7e167ece);    text-align: right; /* Alinea el texto al centro */
-    padding: 20px; /* Añade espaciado interior */
-    font-family:  monospace;
-    position: absolute; /* Coloca el pie de página en la parte inferior */
-    bottom: 0; /* Alinea el pie de página en la parte inferior */
-    width: 100%; /* Ancho del pie de página igual al ancho de la ventana */
-    
-  }
-  
-  .piePagina em {
-    font-size: x-large;
-    color: rgb(53, 4, 42); /* Cambia el color del texto dentro de <em> */
-   
-  }
+
+
 
   .claseContenedorDeCartas {
      display: flex;
@@ -166,3 +166,44 @@ background-image: url('https://rea.ceibal.edu.uy/elp/el-mundo-del-globo-al-plano
     
     
   }
+
+    
+  #piePagina  {
+    font-size: 1rem;
+    color: rgb(53, 4, 42); /* Cambia el color del texto dentro de <em> */
+   background-color: #e4e40c;
+  }
+
+  /* Estilos para tamaños de pantalla grandes (por defecto) */
+#titulo {
+  font-size: 33px; /* Tamaño de fuente más grande para pantallas grandes */
+}
+
+.card {
+  width: 150px; /* Ancho de tarjeta normal para pantallas grandes */
+  height: 250px; /* Altura de tarjeta normal para pantallas grandes */
+}
+
+/* Media query para pantallas medianas (de 768px a 1024px de ancho) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #titulo {
+      font-size: 18px; /* Tamaño de fuente más pequeño para pantallas medianas */
+  }
+
+  .card {
+      width: 120px; /* Ancho de tarjeta más pequeño para pantallas medianas */
+      height: 200px; /* Altura de tarjeta más pequeña para pantallas medianas */
+  }
+}
+
+/* Media query para pantallas pequeñas (menos de 768px de ancho) */
+@media (max-width: 767px) {
+  #titulo {
+      font-size: 16px; /* Tamaño de fuente aún más pequeño para pantallas pequeñas */
+  }
+
+  .card {
+      width: 100%; /* Ancho completo para adaptarse a pantallas pequeñas */
+      height: auto; /* Altura automática para adaptarse a pantallas pequeñas */
+  }
+}
