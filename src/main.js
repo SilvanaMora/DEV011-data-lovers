@@ -59,6 +59,8 @@ function limpiarTexto() {
   // function selectContinents () {
     const root = document.getElementById("root");
 
+    
+
     const dataOrdenado = data.countries;
     const selectSort = document.getElementsByName ("asc-desc") [0];
 
