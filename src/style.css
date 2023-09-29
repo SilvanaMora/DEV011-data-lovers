@@ -4,35 +4,34 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #ecb37e;
+  background-color: white;
 }
 #titulo {
     text-align: center;
-    font-size: 66em;
-    font-weight: 600;
-    color: rgb(66, 47, 4);
-    font-family:  monospace;
+    font-size:xx-large;
+    color: rgb(107, 177, 27);
+    font-family: "Helvetica Neue", sans-serif;
     }
   #subtitulo {
-    text-align: center;
-    font-size: 1em;
+    text-align:end;
+    font-size:xx-large;
     font-weight: 500;
-    color: rgb(51, 41, 8);
+    color: black;
   }
   #inicio:hover {
-    background-color:rgba(100, 72, 10, 0.733);/* Cambia el color a tu elección cuando el cursor esté sobre el botón */
+    background-color: rgb(148, 235, 50);/* Cambia el color a tu elección cuando el cursor esté sobre el botón */
   }
   #inicio {
-    background-color: rgba(231, 80, 42, 0.733);
+    background-color: black;
     
       color: white;
-      font-size: 3em;
-      padding: 0.3em;
+      font-size: 1.6em;
+      padding: .9em;
       border: 3 em;
       border-radius: 9%; 
-      border-color: #ec9a1eb6;
+      border-color: white;
       cursor: pointer;
-      text-align: center;
+      text-align: right;
       margin-bottom: 2em;
       
     }
@@ -42,31 +41,48 @@
         width: 300px; /* Cambia el valor a la anchura deseada */
         height: auto; /* Mantén la relación de aspecto original */
       }
+
+      #mundito {
+        margin: 0 auto;
+        width: 39px; /* Cambia el valor a la anchura deseada */
+        height: auto;
+        margin-top: 1px;
+
+      }
       
       #tituloPag2{
 
         /* background-image: url('https://rea.ceibal.edu.uy/elp/el-mundo-del-globo-al-plano/map-of-the-world-2401458_1280.jpg'); */
-        background-color: #dd5025;
+        background-color: black;
         text-align: right;
         font-family: monospace;
          font-size: 3em;
+         color: white;
+         padding: 1.3em;
+        }
+        #viñeta {
+          background-color: red;
         }
 
   #limpiar {
-    background-color:  rgba(231, 80, 42, 0.733);
-    color: white;
+    background-color: rgb(148, 235, 50);
+    color: black;
     font-size: 1.3em;
-    padding: 9px;
+    font-family: monospace;
+    padding: 11px;
     margin: 0 auto;
-    border: 1em solid;
-    border-radius: 9%;
-    border-color: #d4ad89;
+    text-align: right;
+    border: 0.1em solid;
+    border-radius: 13%;
+    border-color: white;
     cursor: pointer; 
-    border-inline-start-color: #dd5025;
+    /* border-inline-start-color: rgba(58, 49, 61, 0.527); */
     border-width: 0.3em;
   }
   #limpiar:hover {
-    background-color:rgba(74, 233, 53, 0.733);/* Cambia el color a tu elección cuando el cursor esté sobre el botón */
+    background-color:rgba(206, 30, 30, 0.733);/* Cambia el color a tu elección cuando el cursor esté sobre el botón */
+    font-family:  monospace;
+    color: azure;
   }
   #contenedorDeFiltrado {
     font-size: 16px; /* Tamaño del texto */
@@ -74,15 +90,15 @@
     font-size: 1.4em;
     font-weight: 500;
     color: rgb(245, 243, 237);
-  
-    background-color:  #472607e5;    text-align: center; /* Alinea el texto al centro */
+  text-align: right;
+    background-color:  black;    text-align: center; /* Alinea el texto al centro */
  
   }
 
   #contenedorDeFormulario {
     font-size: 16px; /* Tamaño del texto */
     font-family:  monospace;
-    background-color: rgb(248, 248, 240);
+    background-color: white;
     text-align: center; /* Alinea el texto al centro */
  
   }
@@ -102,8 +118,8 @@
     width: 150px; /* Define el ancho de cada tarjeta (ajustable según las columnas deseadas) */
   margin-bottom: 5px;
   height: 250px; /* Reduce la altura de la tarjeta */
-  border: 2px solid #ce5c28;
-  background-color: white;
+  border: 2px solid white;
+  background-color: black;
   padding: 10px;
   margin: 10px;
   border-radius: 33px;
@@ -114,15 +130,17 @@
 }
   
   .card h2 {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 5px;
     font-family: monospace;
+    color: rgb(148, 235, 50);
 
   }
   
   .card p {
     font-size: 14px;
     font-family: monospace;
+    color: white;
     
   }
   
@@ -133,13 +151,12 @@
   }
 
   .marcoCartas {
-    width: 200px; /* Define el ancho de cada tarjeta (ajustable según las columnas deseadas) */
+    width: 193px; /* Define el ancho de cada tarjeta (ajustable según las columnas deseadas) */
     margin-bottom: 5px;
-    margin-top: 50px;
+    margin-top: 30px;
     height: 300px; /* Reduce la altura de la tarjeta */
-    border: 2em solid #f7f4f0;
-    background-color: #f08635;
-    padding: 0.3em 0.2em 0.4em 0.8em;
+    border-radius: 6px;
+    background-color:white;
     text-align: center;
   }
 
@@ -151,16 +168,17 @@
      justify-content: space-between; 
     columns: 5;   
     flex-direction: row;
-    background-color: white;
-    
+    background-color: ghostwhite;
     
   }
 
     
   #piePagina  {
     font-size: 1rem;
-    color: rgb(53, 4, 42); /* Cambia el color del texto dentro de <em> */
-   background-color: #e26821;
+    color:white; /* Cambia el color del texto dentro de <em> */
+   background-color: black;
+   text-align: right;
+   padding: 1em;
   }
 
   /* Estilos para tamaños de pantalla grandes (por defecto) */

@@ -44,11 +44,11 @@ export function filterData(data, filterBy, selectedValue) {
 export const computeStats = (data) => {
 
  // Calcula el número total de países en tu base de datos
-
- const totalPaises = data.length;
+ const copiadoData = data.countries.slice ();
+ const totalPaises = copiadoData.length;
 
  // Agrupa los países por continente y cuenta cuántos hay en cada continente
- const paisesPorContinente = data.reduce((accumulator, country) => {
+ const paisesPorContinente = copiadoData.reduce((accumulator, country) => {
    const continents = country.continents[0]; // Suponemos que cada país tiene un solo continente
    accumulator[continents] = (accumulator[continents] || 0) + 1;
    return accumulator;
