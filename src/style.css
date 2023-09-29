@@ -4,34 +4,26 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #052c31;
+  background-color: #ecb37e;
 }
-
-#tituloPag2{
-
-background-image: url('https://rea.ceibal.edu.uy/elp/el-mundo-del-globo-al-plano/map-of-the-world-2401458_1280.jpg');
-
- 
-}
-
 #titulo {
     text-align: center;
-    font-size: 2em;
-    color: white;
-    
-  }
-  
+    font-size: 66em;
+    font-weight: 600;
+    color: rgb(66, 47, 4);
+    font-family:  monospace;
+    }
   #subtitulo {
     text-align: center;
     font-size: 1em;
-    color: white;
+    font-weight: 500;
+    color: rgb(51, 41, 8);
   }
-
   #inicio:hover {
-    background-color: rgb(106, 204, 41);/* Cambia el color a tu elección cuando el cursor esté sobre el botón */
+    background-color:rgba(100, 72, 10, 0.733);/* Cambia el color a tu elección cuando el cursor esté sobre el botón */
   }
   #inicio {
-    background-color: rgba(100, 72, 10, 0.733);
+    background-color: rgba(231, 80, 42, 0.733);
     
       color: white;
       font-size: 3em;
@@ -51,56 +43,50 @@ background-image: url('https://rea.ceibal.edu.uy/elp/el-mundo-del-globo-al-plano
         height: auto; /* Mantén la relación de aspecto original */
       }
       
-.contenedorBotones {
-  text-align: center;
-}
+      #tituloPag2{
+
+        /* background-image: url('https://rea.ceibal.edu.uy/elp/el-mundo-del-globo-al-plano/map-of-the-world-2401458_1280.jpg'); */
+        background-color: #dd5025;
+        text-align: right;
+        font-family: monospace;
+         font-size: 3em;
+        }
 
   #limpiar {
-    background-color: rgb(133, 33, 228);
+    background-color:  rgba(231, 80, 42, 0.733);
     color: white;
-    font-size: 20px;
-    padding: 10px;
+    font-size: 1.3em;
+    padding: 9px;
     margin: 0 auto;
-    border: 0px solid;
-    cursor: pointer;
-    
+    border: 1em solid;
+    border-radius: 9%;
+    border-color: #d4ad89;
+    cursor: pointer; 
+    border-inline-start-color: #dd5025;
+    border-width: 0.3em;
   }
-  
-  #buscar {
-    background-color: rgb(84, 184, 159);
-    color: white;
-    font-size: 20px;
-    padding: 10px;
-    margin: 0 auto;
-    border: 0px solid;
-    cursor: pointer;
-    
+  #limpiar:hover {
+    background-color:rgba(74, 233, 53, 0.733);/* Cambia el color a tu elección cuando el cursor esté sobre el botón */
   }
-  
-
   #contenedorDeFiltrado {
     font-size: 16px; /* Tamaño del texto */
     font-family:  monospace;
-    background-image: linear-gradient(to bottom, #f1ece7c9, #d9e78ace);    text-align: center; /* Alinea el texto al centro */
+    font-size: 1.4em;
+    font-weight: 500;
+    color: rgb(245, 243, 237);
+  
+    background-color:  #472607e5;    text-align: center; /* Alinea el texto al centro */
  
   }
-  #titulo{
-    font-size: 16px; /* Tamaño del texto */
-    font-family:  monospace;
 
-  }
   #contenedorDeFormulario {
     font-size: 16px; /* Tamaño del texto */
     font-family:  monospace;
-    background-image: linear-gradient(to bottom, #f1ece7c9, #d9e78ace);    text-align: center; /* Alinea el texto al centro */
+    background-color: rgb(248, 248, 240);
+    text-align: center; /* Alinea el texto al centro */
  
   }
-  #contenedorDeFiltrado {
-   /* position: relative; Para que el height: 100% funcione correctamente */
-    /*min-height:;  Establece la altura mínima al 100% del viewport */
-    background-color: #35b346; /* Cambia el color de fondo según tus preferencias */
-  
-  }
+
 
   
   .contenedorDeCartas {
@@ -116,8 +102,8 @@ background-image: url('https://rea.ceibal.edu.uy/elp/el-mundo-del-globo-al-plano
     width: 150px; /* Define el ancho de cada tarjeta (ajustable según las columnas deseadas) */
   margin-bottom: 5px;
   height: 250px; /* Reduce la altura de la tarjeta */
-  border: 1px solid #f4f6f8;
-  background-color: #99c0ee;
+  border: 2px solid #ce5c28;
+  background-color: white;
   padding: 10px;
   margin: 10px;
   border-radius: 33px;
@@ -130,11 +116,13 @@ background-image: url('https://rea.ceibal.edu.uy/elp/el-mundo-del-globo-al-plano
   .card h2 {
     font-size: 18px;
     margin-bottom: 5px;
+    font-family: monospace;
 
   }
   
   .card p {
     font-size: 14px;
+    font-family: monospace;
     
   }
   
@@ -149,9 +137,9 @@ background-image: url('https://rea.ceibal.edu.uy/elp/el-mundo-del-globo-al-plano
     margin-bottom: 5px;
     margin-top: 50px;
     height: 300px; /* Reduce la altura de la tarjeta */
-    border: 1px solid #e4e40c;
-    background-color: #f7ed67;
-    padding: 5px 3px 5px 5px;
+    border: 2em solid #f7f4f0;
+    background-color: #f08635;
+    padding: 0.3em 0.2em 0.4em 0.8em;
     text-align: center;
   }
 
@@ -163,6 +151,7 @@ background-image: url('https://rea.ceibal.edu.uy/elp/el-mundo-del-globo-al-plano
      justify-content: space-between; 
     columns: 5;   
     flex-direction: row;
+    background-color: white;
     
     
   }
@@ -171,7 +160,7 @@ background-image: url('https://rea.ceibal.edu.uy/elp/el-mundo-del-globo-al-plano
   #piePagina  {
     font-size: 1rem;
     color: rgb(53, 4, 42); /* Cambia el color del texto dentro de <em> */
-   background-color: #e4e40c;
+   background-color: #e26821;
   }
 
   /* Estilos para tamaños de pantalla grandes (por defecto) */
@@ -202,8 +191,8 @@ background-image: url('https://rea.ceibal.edu.uy/elp/el-mundo-del-globo-al-plano
       font-size: 16px; /* Tamaño de fuente aún más pequeño para pantallas pequeñas */
   }
 
-  .card {
+  /* .card {
       width: 100%; /* Ancho completo para adaptarse a pantallas pequeñas */
-      height: auto; /* Altura automática para adaptarse a pantallas pequeñas */
-  }
-}
+    /*  height: auto; /* Altura automática para adaptarse a pantallas pequeñas */
+  /*} */
+/*}*/

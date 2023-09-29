@@ -41,6 +41,30 @@ export function filterData(data, filterBy, selectedValue) {
   return filteredData;
 }
 
-export const anotherExample = () => {
-  return [];
+export const computeStats = (data) => {
+
+ // Calcula el número total de países en tu base de datos
+
+ const totalPaises = data.length;
+
+ // Agrupa los países por continente y cuenta cuántos hay en cada continente
+ const paisesPorContinente = data.reduce((accumulator, country) => {
+   const continents = country.continents[0]; // Suponemos que cada país tiene un solo continente
+   accumulator[continents] = (accumulator[continents] || 0) + 1;
+   return accumulator;
+ }, {});
+
+ // Calcula el porcentaje de países por continente
+ const porcentajePorContinente = {};
+ for (const continents in paisesPorContinente) {
+   const cantidad = paisesPorContinente[continents];
+   const porcentaje = (cantidad / totalPaises) * 100;
+   porcentajePorContinente[continents] = porcentaje;
+ }
+
+ return {
+   totalCountries: totalPaises,
+   percentageByContinent: porcentajePorContinente,
+ };
 };
+

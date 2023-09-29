@@ -3,6 +3,7 @@ import { renderItems } from "./view.js";
 import { filterData } from "./dataFunctions.js";
 import { SortData } from "./dataFunctions.js";
 import { BuscarPais } from "./dataFunctions.js";
+import { computeStats} from "./dataFunctions.js";
 console.log(SortData(data.countries, "name"));
 
 document.getElementById("inicio").onclick = function () {
@@ -88,3 +89,22 @@ selectSort.addEventListener("change", () => {
   root.innerHTML = renderItems(resultadoSort);
   console.log(resultadoSort);
 });
+
+//estadistica
+
+const stats = computeStats(data);
+
+// Mostrar las estadísticas en el DOM
+const statsContainer = document.getElementById("estadisticas"); // Reemplaza "stats-container" con el ID de tu contenedor
+statsContainer.innerHTML = `
+  <h3>Estadísticas:</h3>
+  <p>Total de países: ${stats.totalCountries}</p>
+  <h4>Porcentaje de países por continente:</h4>
+  <ul>
+    ${Object.entries(stats.percentageByContinent)
+      .map(([continent, percentage]) => `<li>${continent}: ${percentage.toFixed(2)}%</li>`)
+      .join("")}
+  </ul>
+`;
+
+
