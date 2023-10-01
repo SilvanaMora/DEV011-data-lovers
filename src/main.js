@@ -6,6 +6,9 @@ import { BuscarPais } from "./dataFunctions.js";
 import { computeStats} from "./dataFunctions.js";
 console.log(SortData(data.countries, "name"));
 
+const datos = data.countries;
+let datosFiltrados = datos;
+
 document.getElementById("inicio").onclick = function () {
   document.getElementById("portada").style.display = "none";
   document.getElementById("contenedorFunciones").style.display = null;
@@ -22,7 +25,10 @@ textoBuscador.addEventListener("keyup", pintarBuscarPais);
 limpiar.addEventListener("click", limpiarTexto);
 
 function pintarBuscarPais() {
-  const resultado = BuscarPais(data.countries);
+  const resultado = BuscarPais(datosFiltrados);
+  const por = document.getElementById("porcent");
+const stats = computeStats(datosFiltrados, data.countries.length);
+por.innerHTML = "Se ha mostrado el " + stats +"%  del total de los países."
   const busqueda = renderItems(resultado);
   document.querySelector("#root").innerHTML = busqueda;
 }
@@ -32,6 +38,10 @@ function limpiarTexto() {
  const inputText = document.getElementById("textoIngresado");
  const inputSelection = document.getElementById("continents");
  const inputSelectionOrden = document.getElementById("asc-desc");
+ datosFiltrados= datos;
+ const por = document.getElementById("porcent");
+const stats = computeStats(datosFiltrados, data.countries.length);
+por.innerHTML = "Se ha mostrado el " + stats +"%  del total de los países."
  inputText.value = "";
  inputSelection.value = "nada"; //Establece el valor del input en una cadena vacía para borrar el texto.
  inputSelectionOrden.value = "nada";
@@ -47,6 +57,8 @@ function limpiarTexto() {
 
 const selectContinents = document.getElementById("continents");
 selectContinents.addEventListener("change", (event) => {
+
+
   const selectSort = document.getElementsByName("asc-desc")[0];
   console.log(selectSort.value);
   const valueSelected = event.target.value;
@@ -56,12 +68,30 @@ selectContinents.addEventListener("change", (event) => {
     "continents",
     valueSelected
   );
+  datosFiltrados = dataFilteredByContinent;
+  const por = document.getElementById("porcent");
+const stats = computeStats(datosFiltrados, data.countries.length);
+por.innerHTML = "Se ha mostrado el " + stats +"%  del total de los países."
+
   console.log (valueSelected);
+  
   if (selectSort.value !== "nada" && valueSelected){
     newArray = SortData(dataFilteredByContinent, "name", selectSort.value);
+    
   }
   
   root.innerHTML = renderItems(!newArray.length ? dataFilteredByContinent : newArray);
+
+  if(selectContinents.value === "nadac"){
+
+    const allData1 = renderItems(data.countries);
+    document.querySelector("#root").innerHTML = allData1;
+    const por = document.getElementById("porcent");
+    datosFiltrados = datos;
+    const stats = computeStats(datosFiltrados, data.countries.length);
+    por.innerHTML = "Se ha mostrado el " + stats +"%  del total de los países."
+
+  }
 });
 
 // function selectContinents () {
@@ -91,20 +121,21 @@ selectSort.addEventListener("change", () => {
 });
 
 //estadistica
+const por = document.getElementById("porcent");
+const stats = computeStats(datosFiltrados, data.countries.length);
+por.innerHTML = "Se ha mostrado el " + stats +"%  del total de los países."
 
-const stats = computeStats(data);
-
-// Mostrar las estadísticas en el DOM
-const statsContainer = document.getElementById("estadisticas"); // Reemplaza "stats-container" con el ID de tu contenedor
-statsContainer.innerHTML = `
-  <h3>Estadísticas:</h3>
-  <p>Total de países: ${stats.totalCountries}</p>
-  <h4>Porcentaje de países por continente:</h4>
-  <ul>
-    ${Object.entries(stats.percentageByContinent)
-      .map(([continent, percentage]) => `<li>${continent}: ${percentage.toFixed(2)}%</li>`)
-      .join("")}
-  </ul>
-`;
+// // Mostrar las estadísticas en el DOM
+// const statsContainer = document.getElementById("estadisticas"); // Reemplaza "stats-container" con el ID de tu contenedor
+// statsContainer.innerHTML = `
+//   <h3>Estadísticas:</h3>
+//   <p>Total de países: ${stats.totalCountries}</p>
+//   <h4>Porcentaje de países por continente:</h4>
+//   <ul>
+//     ${Object.entries(stats.percentageByContinent)
+//       .map(([continent, percentage]) => `<li>${continent}: ${percentage.toFixed(2)}%</li>`)
+//       .join("")}
+//   </ul>
+// `;
 
 
