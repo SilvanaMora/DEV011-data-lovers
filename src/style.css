@@ -45,7 +45,7 @@
   h1 {
     font-size: 3em;
     font-family: monospace;
-    color: rgb(37, 214, 82);
+    color:  rgb(79, 201, 43);
   }
   .card {
     width: 150px; /* Ancho de tarjeta normal para pantallas grandes */
@@ -68,7 +68,7 @@
   header {
     /* Estilos para elementos <header> */
     font-size: 0.88em;
-    background-color: #1ed445;
+    background-color:  rgb(79, 201, 43);
     color: white;
     padding: 0.3em;
     text-align: center;
@@ -89,11 +89,11 @@ align-self: auto;
   #subtitulo {
 align-content: right;
     font-size:1.6em;
-    color: rgb(179, 40, 207);
+    color: rgb(150, 24, 175);
     margin-bottom: 0.1em;
   }
   #inicio:hover {
-    background-color: rgba(144, 51, 156, 0.733);/* Cambia el color a tu elección cuando el cursor esté sobre el botón */
+    background-color: rgba(102, 12, 114, 0.733);/* Cambia el color a tu elección cuando el cursor esté sobre el botón */
     color: azure;
   }
   #inicio {
@@ -115,23 +115,28 @@ align-content: right;
 
       #mundito {
       
-        width: 1.3em; /* Cambia el valor a la anchura deseada */
+        width: 1.9em; /* Cambia el valor a la anchura deseada */
         height: auto;
-        margin-top: 0;
-
+padding-top: 0.1em;
+padding-bottom: 0;
+padding-left: 0.1em;
+padding-right: 0.1em;
+margin-top: 0.6em;
       }
       
       #tituloPag2{
 
         /* background-image: url('https://rea.ceibal.edu.uy/elp/el-mundo-del-globo-al-plano/map-of-the-world-2401458_1280.jpg'); */
         background-color: black;
-        text-align: left;
+        text-align: end;
         font-family: monospace;
          font-size: 1.6em;
          color: white;
-         padding-top: 1.1em;
+         padding-top: 0.9em;
          padding-bottom: 1.1em;
+         padding-right: 1.1em;
          text-align: right;
+         margin-top: 0.1em;
         }
 
 
@@ -223,11 +228,10 @@ align-content: right;
 .card {
   background-color: black;
   border-radius: 1.3em;
-  text-align: center;
-  justify-content: center;
+  display: flexbox;
   align-items: center;
   padding-top: 0.2em;
-  padding-bottom: 0.3em;
+  padding-bottom: 0.1em;
   padding-left: 1.3em;
   padding-right: 1.3em;
   margin-bottom: 1em;
@@ -260,14 +264,10 @@ align-content: right;
   }
 
   .marcoCartas {
-   padding-top: 1.1em;
-   padding-bottom: 1.1em;
-   padding-left: 1em;
-   padding-right: 1em; /* Reduce la altura de la tarjeta */
-    border-radius: 3em;
-  
-    background-color:white;
-    text-align: center;
+    display: flex;
+   /* Reduce la altura de la tarjeta */
+    margin-bottom: 1em;
+    
   }
 
 
@@ -278,7 +278,11 @@ align-content: right;
      justify-content: space-between; 
     columns: 4;   
     flex-direction: row;
-    background-color: ghostwhite;
+    background-color: rgb(193, 245, 178);
+    text-align: center;
+    margin-top: 0.3em;
+    padding-top: 1em;
+ 
     
   }
 
