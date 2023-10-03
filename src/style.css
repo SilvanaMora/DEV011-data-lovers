@@ -68,10 +68,11 @@
   header {
     /* Estilos para elementos <header> */
     font-size: 0.88em;
-    background-color:  rgb(79, 201, 43);
+    background-color: rgb(193, 245, 178);
     color: white;
     padding: 0.3em;
     text-align: center;
+    
   }
 
 
