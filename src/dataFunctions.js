@@ -26,7 +26,9 @@ export function SortData(data, sortBy, sortOrder) {
 // function BuscarPais() {}
 
 export const BuscarPais = (data) => {
-  const inputText = document.getElementById("textoIngresado").value.toUpperCase();
+  const inputText = document
+    .getElementById("textoIngresado")
+    .value.toUpperCase();
   console.log(inputText);
   const resultado = data.filter((word) =>
     word.name.common.toUpperCase().includes(inputText)
@@ -41,33 +43,32 @@ export function filterData(data, filterBy, selectedValue) {
   return filteredData;
 }
 
-export const computeStats = (data,inventarioPaises) => {
+export const computeStats = (data, inventarioPaises) => {
   const copia = data;
   const porcentaje = (copia.length * 100) / inventarioPaises;
-  return porcentaje;
+  return porcentaje.toFixed(2);
 
-//  // Calcula el número total de países en tu base de datos
-//  const copiadoData = data.countries.slice ();
-//  const totalPaises = copiadoData.length;
+  // Calcula el número total de países en tu base de datos
+  //  const copiadoData = data.countries.slice ();
+  //  const totalPaises = copiadoData.length;
 
-//  // Agrupa los países por continente y cuenta cuántos hay en cada continente
-//  const paisesPorContinente = copiadoData.reduce((accumulator, country) => {
-//    const continents = country.continents[0]; // Suponemos que cada país tiene un solo continente
-//    accumulator[continents] = (accumulator[continents] || 0) + 1;
-//    return accumulator;
-//  }, {});
+  //  // Agrupa los países por continente y cuenta cuántos hay en cada continente
+  //  const paisesPorContinente = copiadoData.reduce((accumulator, country) => {
+  //    const continents = country.continents[0]; // Suponemos que cada país tiene un solo continente
+  //    accumulator[continents] = (accumulator[continents] || 0) + 1;
+  //    return accumulator;
+  //  }, {});
 
-//  // Calcula el porcentaje de países por continente
-//  const porcentajePorContinente = {};
-//  for (const continents in paisesPorContinente) {
-//    const cantidad = paisesPorContinente[continents];
-//    const porcentaje = (cantidad / totalPaises) * 100;
-//    porcentajePorContinente[continents] = porcentaje;
-//  }
+  //  // Calcula el porcentaje de países por continente
+  //  const porcentajePorContinente = {};
+  //  for (const continents in paisesPorContinente) {
+  //    const cantidad = paisesPorContinente[continents];
+  //    const porcentaje = (cantidad / totalPaises) * 100;
+  //    porcentajePorContinente[continents] = porcentaje;
+  //  }
 
-//  return {
-//    totalCountries: totalPaises,
-//    percentageByContinent: porcentajePorContinente,
-//  };
+  //  return {
+  //    totalCountries: totalPaises,
+  //    percentageByContinent: porcentajePorContinente,
+  //  };
 };
-

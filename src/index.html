@@ -12,7 +12,7 @@
     <header>
       <div id ="portada" class="contenedor">
        
-          <h1 id="titulo">Bienvenid@s a: "Geografía para curiosos"</h1>
+          <h1>Bienvenid@s a: <b>"Geografía para curiosos" </b></h1>
           <div class = "loggin" id="portada2" ></div>
            <img id="gifPaises" src="https://upload.wikimedia.org/wikipedia/commons/9/96/Mundo_hecho_de_Banderas.gif">
            <button id="inicio"> Iniciar </button>
@@ -21,38 +21,38 @@
     </header>
 
 <div class="wrapper contenedor" id="contenedorFunciones" style="display:none">
-  <div id: "viñeta">
-<h1 id="tituloPag2"> <img  id= "mundito" src="https://img1.freepng.ru/20180831/tiw/kisspng-clip-art-openclipart-vector-graphics-computer-icon-pasaulis-tarptautinis-em-planeta-mlynas-ne-5b892b78c14354.9175998315357162167916.jpg"> Geografía para Curios@s</h1>
+  <div id="viñeta">
+<h2 id="tituloPag2"> <img  id= "mundito" src="https://img1.freepng.ru/20180831/tiw/kisspng-clip-art-openclipart-vector-graphics-computer-icon-pasaulis-tarptautinis-em-planeta-mlynas-ne-5b892b78c14354.9175998315357162167916.jpg"> Geografía para Curios@s</h2>
   </div>
     
       
     <div id="contenedorDeFormulario">
-      <h2 class = "subtituloPag2">¿Sabías que los países que integran América Latina representan el 5 % del total de países en el mundo, y, que *** es el continente más poblado? </h2> 
-      <p> Puedes dirigir tu ruta por el mundo accediendo a cualquiera de los filtros construidos especialmente para ti
+      <p class = "subtituloPag2"> ¿ <b>Sabías que</b> los países que integran <b>América Latina </b>, representan el <b> 8.06 % </b> del total de países en el mundo, y, que <b>Asia</b> es el continente <b>más poblado </b> en el mundo ? 
      </p>
     </div>
 
       <!-- <label for= "name" data-testid="select-filter"></label> -->
-      <nav id="contenedorDeFiltrado">
-        <label for = "busqueda-nombre"> Búsqueda por nombre:
-          <input type ="text" id = "textoIngresado" placeholder="Ingresa el nombre del país:"/></label> 
+      <nav class="contenedorSelectores">
+        <label for = "busqueda-nombre"> <p class="nombre"> Buscar por nombre:  </p> <input type ="text" id = "textoIngresado" placeholder="Ingresa el nombre del país"/> </label> 
+         <br>
           <!-- <button id = "buscar"> Buscar </button> -->
-        <label for = "continents">Filtro por Continentes: <select name="continents" id="continents" data-testid="select-filter" > 
-          <option value="nadac"> Selecciona un continente </option>
-          <option value="Africa">África</option>
-          <option value="America">América</option>
-          <option value="Asia">Asia</option>
-          <option value="Europe">Europa</option>
-          <option value="Oceania">Oceanía</option>
-          <option value="Antarctica">Antartica</option>
-        </select></label>
+       <label for = "continents" class="contenedorSelectores"> <select name="continents" id="continents" data-testid="select-filter" > 
+        <ul class="selectorOpciones">
+        <li class="selectorOpciones"><option value="nada"> Selecciona un continente </option></li>
+        <li class="selectorOpciones"> <option value="Africa">África</option></li>
+        <li class="selectorOpciones"> <option value="America">América</option></li>
+        <li class="selectorOpciones"><option value="Asia">Asia</option></li>
+        <li class="selectorOpciones"> <option value="Europe">Europa</option></li>
+        <li class="selectorOpciones"><option value="Oceania">Oceanía</option></li>
+        <li class="selectorOpciones"><option value="Antarctica">Antartica</option></li>
+        </ul> </select></label>
         <label for = "asc-desc"> 
-          <select name="asc-desc" id="asc-desc" data-testid="select-filter">
-            <option value="nada" selected >Ordenar</option>
-            <option value="asc">  A - Z </option>
-            <option value="desc"> Z - A </option>
-          </select>
-        </label>
+        <select name="asc-desc" id="asc-desc" data-testid="select-filter">
+        <ul class="selectorOpciones">
+        <li class="selectorOpciones"><option value="nada" selected >Ordenar</option></li>
+        <li class="selectorOpciones"><option value="asc">  A - Z </option></li>
+        <li class="selectorOpciones"><option value="desc"> Z - A </option></li>
+        </ul></select></label>
         <button id = "limpiar" data-testid = "select-limpiar"> Limpiar </button>
       </nav> 
 <article class="articulos" id="estadisticas" >
@@ -72,7 +72,7 @@
   </div>
 </div>
 <div id="fotter">
-<footer id ="piePagina"><em> Autoras: Silvana Mora y Angélica Ríos.</em></footer>
+<footer><em> Autoras: Silvana Mora y Angélica Ríos.</em></footer>
 </div>
 <script src="main.js" type="module"></script>
 </body>

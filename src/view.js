@@ -5,11 +5,11 @@ export const renderItems = (data) => {
     <div class= "marcoCartas"> 
     <div class="card">
     <h2>${element.name.common}</h2>
-    <p>Capital: ${element.capital}</p>
+    <p><b>Capital:</b> ${element.capital}</p>
     <img src="${element.flags.svg}" alt="Bandera de ${element.name.common}" />
     <div class="info">
-    <p>Población: ${element.population}</p>
-    <p>Área: ${element.area} km²</p>
+    <p> <b>Población:</b> ${element.population}</p>
+    <p><b>Área:</b> ${element.area} <b>km² </b></p>
     <!-- Agrega más información aquí según tus necesidades -->
   </div>
         </div>
