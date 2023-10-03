@@ -46,5 +46,8 @@
   },
   "jest": {
     "testEnvironment": "jsdom"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.0"
   }
 }

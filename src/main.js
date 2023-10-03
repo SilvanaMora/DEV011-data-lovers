@@ -1,7 +1,8 @@
 import data from "./data/countries/countries.js";
-import { filterData,} from "./dataFunctions.js";
-//import { sortData } from './dataFunctions.js';
+import { filterData } from "./dataFunctions.js";
+import { sortData } from "./dataFunctions.js";
 import { renderItems } from "./view.js";
+console.log(sortData(data.countries, "name"));
 
 document.getElementById("inicio").onclick = function () {
   document.getElementById("portada").style.display = "none";
@@ -34,20 +35,39 @@ const selectContinents = document.getElementById("continents");
 selectContinents.addEventListener("change", (event) => {
   console.log(event.target.value, data);
   const valueSelected = event.target.value;
-  const dataFilteredBycontinent = filterData(data.countries, "continents", valueSelected
+  const dataFilteredBycontinent = filterData(
+    data.countries,
+    "continents",
+    valueSelected
   );
   root.innerHTML = renderItems(dataFilteredBycontinent);
 });
 
+//const order = document.getElementById("orden-ascendete");
+//selectOrder.addEventListener("change", (event) => {
+//console.log(event.target.value, data);
+//const valueSelected = event.target.value;
+//const dataSortBycommon = sortData(data.countries.name "common", valueSelected
+//);
+//root.innerHTML = renderItems(dataSortBycommon);
+//});
 
+const selectOrdenar = document.getElementById("orden");
+selectOrdenar.addEventListener("change", () => {
+  const sortOrder = selectOrdenar.value;
+  console.log(sortOrder);
 
-  //btnBuscar.addEventListener("click", function () {
-    //const name = document.querySelector("#textoIngresado").value;
-    //const searchPais = search(data.countries, name);
-    //root.innerHTML = "";
-    //root.appendChild(renderItems(searchPais));
+  // Ordena los datos.
+  const sortedData = sortData(data.countries.name, "common", sortOrder);
 
-//  });
+  // Carga los elementos de tarjetas ordenados.
+  if (sortedData) {
+    root.innerHTML = "";
+    root.innerHTML=renderItems(sortedData)
+    //sortedData.forEach((a, b) => {
+      //root.appendChild(renderItems(a, b));
+    //});
+  }
+});
 
-  
 

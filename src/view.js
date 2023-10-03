@@ -13,3 +13,4 @@ export const renderItems = (data) => {
   });
   return cards;
 };
+
