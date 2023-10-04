@@ -4,6 +4,9 @@ import { filterData } from "./dataFunctions.js";
 import { SortData } from "./dataFunctions.js";
 import { BuscarPais } from "./dataFunctions.js";
 import { computeStats } from "./dataFunctions.js";
+import { Stats2 } from "./dataFunctions.js";
+
+
 
 console.log(SortData(data.countries, "name"));
 
@@ -13,7 +16,6 @@ let datosFiltrados = datos;
 document.getElementById("inicio").onclick = function () {
   document.getElementById("portada").style.display = "none";
   document.getElementById("contenedorFunciones").style.display = null;
-  document.getElementById("fotter").style.display = null;
   // document.getElementById("contenedorBotones").style.display = null;
 };
 
@@ -29,8 +31,9 @@ function pintarBuscarPais() {
 
   const resultado = BuscarPais(datosFiltrados);
   const por = document.getElementById("porcent");
-  const stats = computeStats(resultado, data.countries.length);
+  const stats = Stats2(resultado, data.countries.length);
   por.innerHTML = "Se ha mostrado el " + stats + "%  del total de los países.";
+  computeStats (resultado);
  
  
   const busqueda = renderItems(resultado);
@@ -43,7 +46,8 @@ function limpiarTexto() {
   const inputSelection = document.getElementById("continents");
   const inputSelectionOrden = document.getElementById("asc-desc");
   const por = document.getElementById("porcent");
-  const stats = computeStats(datosFiltrados, data.countries.length);
+  const stats = Stats2(datosFiltrados, data.countries.length);
+
   por.innerHTML = "Se ha mostrado el " + stats + "%  del total de los países.";
   inputText.value = "";
   inputSelection.value = "nada"; //Establece el valor del input en una cadena vacía para borrar el texto.
@@ -59,10 +63,10 @@ function limpiarTexto() {
 // function selectContinents () {
 
 const selectContinents = document.getElementById("continents");
-selectContinents.addEventListener("change", (event) => {
+selectContinents.addEventListener("change", (evt) => {
   const selectSort = document.getElementsByName("asc-desc")[0];
   console.log(selectSort.value);
-  const valueSelected = event.target.value;
+  const valueSelected = evt.target.value;
   let newArray = [];
   const dataFilteredByContinent = filterData(
     data.countries,
@@ -71,7 +75,7 @@ selectContinents.addEventListener("change", (event) => {
   );
   datosFiltrados = dataFilteredByContinent;
   const por = document.getElementById("porcent");
-  const stats = computeStats(datosFiltrados, data.countries.length);
+  const stats = Stats2(datosFiltrados, data.countries.length);
   por.innerHTML = "Se ha mostrado el " + stats + "%  del total de los países.";
 
   console.log(valueSelected);
@@ -89,7 +93,8 @@ selectContinents.addEventListener("change", (event) => {
     document.querySelector("#root").innerHTML = allData1;
     const por = document.getElementById("porcent");
     datosFiltrados = datos;
-    const stats = computeStats(datosFiltrados, data.countries.length);
+    const stats = Stats2(datosFiltrados, data.countries.length);
+
     por.innerHTML =
       "Se ha mostrado el " + stats + "%  del total de los países.";
   }
@@ -123,8 +128,10 @@ selectSort.addEventListener("change", () => {
 
 //estadistica
 const por = document.getElementById("porcent");
-const stats = computeStats(datosFiltrados, data.countries.length);
+const stats = Stats2(datosFiltrados, data.countries.length);
 por.innerHTML = "Se ha mostrado el " + stats + "%  del total de los países.";
+
+computeStats(datosFiltrados);
 
 // // Mostrar las estadísticas en el DOM
 // const statsContainer = document.getElementById("estadisticas"); // Reemplaza "stats-container" con el ID de tu contenedor
