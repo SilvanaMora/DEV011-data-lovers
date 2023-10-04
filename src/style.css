@@ -1,158 +1,282 @@
+/* Media query para pantallas pequeñas (menos de 768px de ancho) */
+@media (max-width: 767px) {
+  
+  .card {
+    width: calc(50% - 20px); /* Ancho del 50% del contenedor menos un margen de 20px */
+    max-width: none; /* Elimina el ancho máximo */
+    height: calc(50% - 20px); /* Altura automática para adaptarse al contenido */
+    margin-left: 5em; /* Margen entre las tarjetas */
+    margin-right: 5em;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    padding-top: 1em;
+  }
+  
+  #limpiar {
+    background-color: rgb(79, 201, 43);
+    font-size: 0.5em;
+    font-family: monospace;
+    color: rgb(233, 233, 243);
+    padding: 0.1em;
+    margin-bottom: 0.1em;
+    margin-top: 0.1em;
+    text-align: center;
+    border: 0.16em solid;
+    border-radius: 1em;
+    border-color: white;
+    cursor: pointer; 
+    /* border-inline-start-color: rgba(133, 19, 123, 0.527); */ 
+  }
+  #limpiar:hover {
+    background-color:rgba(173, 26, 137, 0.733);
+    color: azure;
+  }
+
+  select {
+    font-size: 0.1em;
+    font-family: monospace;
+    padding: 0.3em;
+    margin-bottom: 1em;
+  }
+ 
+
+}
+  /* Estilos para tamaños de pantalla grandes (por defecto) */
+  h1 {
+    font-size: 3em;
+    font-family: monospace;
+    color:  rgb(79, 201, 43);
+  }
+  .card {
+    width: 150px; /* Ancho de tarjeta normal para pantallas grandes */
+    height: 250px; /* Altura de tarjeta normal para pantallas grandes */
+  }
+  
+  /* Media query para pantallas medianas (de 768px a 1024px de ancho) */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    #titulo {
+        font-size: 4em; /* Tamaño de fuente más pequeño para pantallas medianas */
+    }
+  
+    .card {
+        width: 120px; /* Ancho de tarjeta más pequeño para pantallas medianas */
+        height: 200px; /* Altura de tarjeta más pequeña para pantallas medianas */
+    }
+  }
+  
+  
+  header {
+    /* Estilos para elementos <header> */
+    font-size: 0.88em;
+    background-color: rgb(193, 245, 178);
+    color: white;
+    padding: 0.3em;
+    text-align: center;
+    
+  }
+
 
 #portada {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #052c31;
+  background-color: white;
 }
 
-#tituloPag2{
-
-background-image: url('https://rea.ceibal.edu.uy/elp/el-mundo-del-globo-al-plano/map-of-the-world-2401458_1280.jpg');
-
- 
+.contenedor{
+align-self: auto;
 }
-
-#titulo {
-    text-align: center;
-    font-size: 2em;
-    color: white;
-    
-  }
-  
   #subtitulo {
-    text-align: center;
-    font-size: 1em;
-    color: white;
+align-content: right;
+    font-size:1.6em;
+    color: rgb(150, 24, 175);
+    margin-bottom: 0.1em;
   }
-
   #inicio:hover {
-    background-color: rgb(106, 204, 41);/* Cambia el color a tu elección cuando el cursor esté sobre el botón */
+    background-color: rgba(102, 12, 114, 0.733);/* Cambia el color a tu elección cuando el cursor esté sobre el botón */
+    color: azure;
   }
   #inicio {
-    background-color: rgba(100, 72, 10, 0.733);
-    
+    background-color: black;
       color: white;
-      font-size: 3em;
-      padding: 0.3em;
+      font-size: 1.5em;
+      padding: .9em;
       border: 3 em;
       border-radius: 9%; 
-      border-color: #ec9a1eb6;
+      border-color: white;
       cursor: pointer;
-      text-align: center;
-      margin-bottom: 2em;
-      
+      margin-bottom: 1em;
+ 
     }
     
     #gifPaises {
-        margin: 0 auto;
-        width: 300px; /* Cambia el valor a la anchura deseada */
-        height: auto; /* Mantén la relación de aspecto original */
+        width: 16em; /* Cambia el valor a la anchura deseada */
+      }
+
+      #mundito {
+      
+        width: 1.9em; /* Cambia el valor a la anchura deseada */
+        height: auto;
+padding-top: 0.1em;
+padding-bottom: 0;
+padding-left: 0.1em;
+padding-right: 0.1em;
+margin-top: 0.6em;
       }
       
-.contenedorBotones {
-  text-align: center;
-}
+      #tituloPag2{
+
+        /* background-image: url('https://rea.ceibal.edu.uy/elp/el-mundo-del-globo-al-plano/map-of-the-world-2401458_1280.jpg'); */
+        background-color: black;
+        text-align: end;
+        font-family: monospace;
+         font-size: 1.6em;
+         color: white;
+         padding-top: 0.9em;
+         padding-bottom: 1.1em;
+         padding-right: 1.1em;
+         text-align: right;
+         margin-top: 0.1em;
+        }
+
 
   #limpiar {
-    background-color: rgb(133, 33, 228);
-    color: white;
-    font-size: 20px;
-    padding: 10px;
-    margin: 0 auto;
-    border: 0px solid;
-    cursor: pointer;
-    
+    background-color: rgb(79, 201, 43);
+    font-size: 1.3em;
+    font-family: monospace;
+    color: rgb(233, 233, 243);
+    padding: 0.2em;
+    margin-bottom: 0.3em;
+    margin-top: 0.2em;
+    text-align: center;
+    border: 0.16em solid;
+    border-radius: 0.3em;
+    border-color: white;
+    cursor: pointer; 
+    /* border-inline-start-color: rgba(133, 19, 123, 0.527); */ 
   }
-  
-  #buscar {
-    background-color: rgb(84, 184, 159);
-    color: white;
-    font-size: 20px;
-    padding: 10px;
-    margin: 0 auto;
-    border: 0px solid;
-    cursor: pointer;
-    
+  #limpiar:hover {
+    background-color:rgba(173, 26, 137, 0.733);
+    color: azure;
   }
-  
 
-  #contenedorDeFiltrado {
-    font-size: 16px; /* Tamaño del texto */
-    font-family:  monospace;
-    background-image: linear-gradient(to bottom, #f1ece7c9, #d9e78ace);    text-align: center; /* Alinea el texto al centro */
- 
+  #textoIngresado {
+    font-size: 0.9em;
+    color: #000;
+    font-family: monospace;
+    padding: 0.1em;
+    width: 16em;
   }
-  #titulo{
-    font-size: 16px; /* Tamaño del texto */
-    font-family:  monospace;
 
+  #busquedaNombre {
+    margin-top: 1em;
+    padding-top: 0.1em;
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+    font-family: monospace;
   }
   #contenedorDeFormulario {
-    font-size: 16px; /* Tamaño del texto */
+    font-size: 1.1em; /* Tamaño del texto */
     font-family:  monospace;
-    background-image: linear-gradient(to bottom, #f1ece7c9, #d9e78ace);    text-align: center; /* Alinea el texto al centro */
- 
+    background-color: white;
+    text-align: center;
   }
-  #contenedorDeFiltrado {
-   /* position: relative; Para que el height: 100% funcione correctamente */
-    /*min-height:;  Establece la altura mínima al 100% del viewport */
-    background-color: #35b346; /* Cambia el color de fondo según tus preferencias */
   
-  }
+.selectorOpciones{
+  margin-top: 1em;
+  font-size: 1em;
+  font-family: monospace;
+  padding: 0.3em;
+  display:flexbox;
 
-  
-  .contenedorDeCartas {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; /* Espaciado uniforme entre las tarjetas en la fila */ 
-  columns: 5;
-  flex-direction: column;
-  align-items: center;
+ 
  
 }
-.card {
-    width: 150px; /* Define el ancho de cada tarjeta (ajustable según las columnas deseadas) */
-  margin-bottom: 5px;
-  height: 250px; /* Reduce la altura de la tarjeta */
-  border: 1px solid #f4f6f8;
-  background-color: #99c0ee;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 33px;
+  /* Estilo para los selectores (dropdowns) */
+
+  #continents, #asc-desc {
+    font-size: 0.9em;
+    font-family: monospace;
+    color: #585656;
+    margin-top: 1em;
+    padding: 0.1em;
+  }
+  .contenedorSelectores{
+    background-color: rgb(213, 172, 223);
+    border-radius: 0.3em;
+    margin-top: 0.6em;
+    margin-top: 1em;
+    padding-top: 0.6em;
+    padding-bottom: 0.4em;
+   
+ 
+  
+  }
+#contenedorFunciones {
+  background-color: white;
   text-align: center;
-  justify-content: center;
+}
+  .contenedorDeCartas {
+  display: flex;
+  flex-wrap :wrap-reverse;
+  }
+
+  #porcent {
+    font-family: monospace;
+    font-size: 1.1em;
+  }
+
+  .pArea{
+    font-family: monospace;
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+
+.card {
+  background-color: black;
+  border-radius: 1.3em;
+  display: flexbox;
   align-items: center;
+  padding-top: 0.2em;
+  padding-bottom: 0.1em;
+  padding-left: 1.3em;
+  padding-right: 1.3em;
+  margin-bottom: 1em;
 
 }
   
   .card h2 {
-    font-size: 18px;
-    margin-bottom: 5px;
+    font-size: 1.11em;
+    font-family: monospace;
+    color: rgb(148, 235, 50);
+    padding-bottom: 0em;
+    padding-top: 0;
+    margin-bottom: 1em;
 
   }
   
   .card p {
-    font-size: 14px;
-    
+    font-size: 0.69em;
+    font-family: monospace;
+    color: white;
+    padding-bottom: 0.1em;  
+    margin-bottom: 1em; 
   }
   
   .card img {
-    max-width: 90px;
-    height: 60px;
+    max-width: 4em;
+    height: 3em;
+    padding-bottom: 0.1em;
     
   }
 
   .marcoCartas {
-    width: 200px; /* Define el ancho de cada tarjeta (ajustable según las columnas deseadas) */
-    margin-bottom: 5px;
-    margin-top: 50px;
-    height: 300px; /* Reduce la altura de la tarjeta */
-    border: 1px solid #e4e40c;
-    background-color: #f7ed67;
-    padding: 5px 3px 5px 5px;
-    text-align: center;
+    display: flex;
+   /* Reduce la altura de la tarjeta */
+    margin-bottom: 1em;
+    
   }
 
 
@@ -161,49 +285,29 @@ background-image: url('https://rea.ceibal.edu.uy/elp/el-mundo-del-globo-al-plano
      display: flex;
      flex-wrap: wrap;
      justify-content: space-between; 
-    columns: 5;   
+    columns: 4;   
     flex-direction: row;
+    background-color: rgb(193, 245, 178);
+    text-align: center;
+    margin-top: 0.3em;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+ 
     
+  }
+
+    footer{
+      font-size: 1em;
+    color:white; /* Cambia el color del texto dentro de <em> */
+   background-color: black;
+   text-align: left;
+   padding: 1em;
+   bottom: 0;
+   width: 100%;
+
+    }
+  
     
-  }
-
-    
-  #piePagina  {
-    font-size: 1rem;
-    color: rgb(53, 4, 42); /* Cambia el color del texto dentro de <em> */
-   background-color: #e4e40c;
-  }
-
-  /* Estilos para tamaños de pantalla grandes (por defecto) */
-#titulo {
-  font-size: 33px; /* Tamaño de fuente más grande para pantallas grandes */
-}
-
-.card {
-  width: 150px; /* Ancho de tarjeta normal para pantallas grandes */
-  height: 250px; /* Altura de tarjeta normal para pantallas grandes */
-}
-
-/* Media query para pantallas medianas (de 768px a 1024px de ancho) */
-@media (min-width: 768px) and (max-width: 1024px) {
-  #titulo {
-      font-size: 18px; /* Tamaño de fuente más pequeño para pantallas medianas */
-  }
-
-  .card {
-      width: 120px; /* Ancho de tarjeta más pequeño para pantallas medianas */
-      height: 200px; /* Altura de tarjeta más pequeña para pantallas medianas */
-  }
-}
-
-/* Media query para pantallas pequeñas (menos de 768px de ancho) */
-@media (max-width: 767px) {
-  #titulo {
-      font-size: 16px; /* Tamaño de fuente aún más pequeño para pantallas pequeñas */
-  }
-
-  .card {
-      width: 100%; /* Ancho completo para adaptarse a pantallas pequeñas */
-      height: auto; /* Altura automática para adaptarse a pantallas pequeñas */
-  }
-}
+  
