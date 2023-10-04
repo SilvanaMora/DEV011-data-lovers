@@ -74,11 +74,12 @@ function addHtmlestadisticas(datosPromedio) {
   const p = document.createElement("p"); //creamos el parrafo para insertar en la seccion
   p.id = "parrafoStats";
   p.innerText =
-    "El área del continente seleccionado es de: " +
+    "La extensión territorial de la opción seleccionada es de de: " +
     datosPromedio.toFixed(2) +
     " kilómetros cuadrados.";
   p.classList.add("centrado"); //le asignamos la clase al parrafo
   sectionStats.appendChild(p); //le agregamos a la seccion el parrafo
+  p.classList.add("pArea");
 }
 
 function eliminarHtml(section) {
