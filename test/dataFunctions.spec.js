@@ -1,7 +1,9 @@
-// import { SortData, filterData, computeStats } from '../src/dataFunctions.js';
-// import { data as fakeData } from './data.js';
+import { renderItems } from "../src/view.js";
+import { SortData } from "../src/dataFunctions.js";
+import { data as fakeData } from "./data.js";
 
-// console.log(fakeData);
+
+console.log(renderItems);
 
 // // describe('SortData', () => {
 
@@ -18,38 +20,25 @@
 //   });
 // });
 
-// import { SortData } from "./SortData";
+describe("SortData", () => {
+  it("should sort data in ascending order by default", () => {
+    const alfabeto = SortData(fakeData, "name", "asc");
 
-// describe("SortData function", () => {
-//   it("should sort the data in ascending order by the specified property", () => {
-//     const data = [
-//       { name: { common: "Colombia" } },
-//       { name: { common: "Argentina" } },
-//       { name: { common: "Brasil" } },
-//     ];
+    // Verifica que el primer elemento sea "Bosnia and Herzegovina"
+    expect(alfabeto).toEqual(fakeData.reverse());
+    // Verifica que el último elemento sea "Singapore"
+  });
+});
+//   describe("SortData2", () => {
+//     it('should sort data in descending order when sortOrder is "desc"', () => {
+//       const alfabeto = SortData(fakeData, "name", "desc");
 
-//     const sortedData = SortData(data, "name", "asc");
-
-//     expect(sortedData).toEqual([
-//       { name: { common: "Argentina" } },
-//       { name: { common: "Brasil" } },
-//       { name: { common: "Colombia" } },
-//     ]);
-//   });
-
-//   it("should sort the data in descending order by the specified property", () => {
-//     const data = [
-//       { name: { common: "Colombia" } },
-//       { name: { common: "Argentina" } },
-//       { name: { common: "Brasil" } },
-//     ];
-
-//     const sortedData = SortData(data, "name", "desc");
-
-//     expect(sortedData).toEqual([
-//       { name: { common: "Colombia" } },
-//       { name: { common: "Brasil" } },
-//       { name: { common: "Argentina" } },
-//     ]);
+//       // Verifica que el primer elemento sea "Singapore"
+//       expect(alfabeto[0].name.common).toBe("Singapore");
+//       // Verifica que el último elemento sea "Bosnia and Herzegovina"
+//       expect(alfabeto[fakeData.length - 1].name.common).toBe(
+//         "Bosnia and Herzegovina"
+//       );
+//     });
 //   });
 // });

@@ -1,6 +1,12 @@
 export const renderItems = (data) => {
-   let cards = "";   data.forEach((element) => {
-    cards += ` 
+  const ul = document.createElement("ul");
+  ul.setAttribute('class', 'claseContenedorDeCartas')
+  data.forEach((element) => {
+    const card = document.createElement("li");
+    card.setAttribute('class', "cardLi");
+    card.setAttribute("itemscope", "");
+    card.setAttribute("itemtype", "element");
+    card.innerHTML = ` 
     <div class= "marcoCartas"> 
     <div class="card">
     <h2>${element.name.common}</h2>
@@ -14,30 +20,7 @@ export const renderItems = (data) => {
      </div>
     </div>
      `;
-   });
-  return cards;
- };
-
-
-// export const renderItems = (data) => {
-//   let cards = "";
-//   data.forEach((element) => {
-//     cards += `
-//       <div class="marcoCartas">
-//         <div itemscope itemtype = "data">
-//         <div class="card">
-//           <h2>${element.name.common}</h2>
-//           <p itemprop="capital">Capital: ${element.capital}</p>
-//             <img src="${element.flags.svg}" alt="Bandera de ${element.name.common}" />
-//             <div class="info">
-//           <p itemprop="population">Población:${element.population}</p>
-//               <p itemprop="area"> Área:${element.area} <b>km²</p>
-//             </div>  
-//           </dl>
-//         </div>
-//       </div>
-//     `;
-//   });
-//   return cards;
-// };
-
+    ul.appendChild(card);
+  });
+  return ul;
+};
