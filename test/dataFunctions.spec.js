@@ -21,7 +21,7 @@ console.log(renderItems);
 // });
 
 describe("SortData", () => {
-  it("should sort data in ascending order by default", () => {
+  it("Muestra los paises ordenados de mayor a menor", () => {
     const alfabeto = SortData(fakeData, "name", "asc");
 
     // Verifica que el primer elemento sea "Bosnia and Herzegovina"
@@ -29,6 +29,10 @@ describe("SortData", () => {
     // Verifica que el último elemento sea "Singapore"
   });
 });
+
+
+
+
 //   describe("SortData2", () => {
 //     it('should sort data in descending order when sortOrder is "desc"', () => {
 //       const alfabeto = SortData(fakeData, "name", "desc");

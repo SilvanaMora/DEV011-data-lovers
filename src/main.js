@@ -21,43 +21,21 @@ document.querySelector("#root").appendChild(allData);
 
 const textoBuscador = document.getElementById("textoIngresado");
 const limpiar = document.getElementById("limpiar");
+
+
 textoBuscador.addEventListener("keyup", pintarBuscarPais);
 limpiar.addEventListener("click", limpiarTexto);
 
 function pintarBuscarPais() {
-
   const resultado = BuscarPais(datosFiltrados);
   const por = document.getElementById("porcent");
   const stats = Stats2(resultado, data.countries.length);
   por.innerHTML = "Se ha mostrado el " + stats + "%  del total de los países.";
   computeStats (resultado);
- 
- 
   const busqueda = renderItems(resultado);
   document.querySelector("#root").innerHTML = ''
   document.querySelector("#root").appendChild(busqueda);
 }
-
-function limpiarTexto() {
-  datosFiltrados = datos;
-  const inputText = document.getElementById("textoIngresado");
-  const inputSelection = document.getElementById("continents");
-  const inputSelectionOrden = document.getElementById("asc-desc");
-  const por = document.getElementById("porcent");
-  const stats = Stats2(datosFiltrados, data.countries.length);
-
-  por.innerHTML = "Se ha mostrado el " + stats + "%  del total de los países.";
-  inputText.value = "";
-  inputSelection.value = "nada"; //Establece el valor del input en una cadena vacía para borrar el texto.
-  inputSelectionOrden.value = "nada";
-  const allData1 = renderItems(data.countries);
-  console.log(data.countries);
-  document.querySelector("#root").innerHTML = ''
-  document.querySelector("#root").appendChild(allData1)
-  console.log("h", 2);
-}
-
-
 
 // function selectContinents () {
 
@@ -131,11 +109,28 @@ selectSort.addEventListener("change", () => {
   console.log(resultadoSort);
 });
 
-//estadistica
+function limpiarTexto() {
+  datosFiltrados = datos;
+  const inputText = document.getElementById("textoIngresado");
+  const inputSelection = document.getElementById("continents");
+  const inputSelectionOrden = document.getElementById("asc-desc");
+  const por = document.getElementById("porcent");
+  const stats = Stats2(datosFiltrados, data.countries.length);
+  por.innerHTML = "Se ha mostrado el " + stats + "%  del total de los países.";
+  inputText.value = "";
+  inputSelection.value = "nada"; //Establece el valor del input en una cadena vacía para borrar el texto.
+  inputSelectionOrden.value = "nada";
+  const allData1 = renderItems(data.countries);
+  console.log(data.countries);
+  document.querySelector("#root").innerHTML = ''
+  document.querySelector("#root").appendChild(allData1)
+  console.log("h", 2);
+}
+
+// Segunda estadística
 const por = document.getElementById("porcent");
 const stats = Stats2(datosFiltrados, data.countries.length);
 por.innerHTML = "Se ha mostrado el " + stats + "%  del total de los países.";
-
 computeStats(datosFiltrados);
 
 
