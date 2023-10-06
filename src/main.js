@@ -120,8 +120,8 @@ selectSort.addEventListener("change", () => {
   console.log(valueSelected);
   root.innerHTML = ''
   root.appendChild(renderItems(resultadoSort))
-  if (!valueSelected) {
-    filterData(resultadoSort, "continents", valueSelected);
+  if (valueSelected != "nada") {
+    filterData(resultadoSort, "continents", valueSelected );
     newArray = SortData(dataFilteredByContinent, "name", selectSort.value);
     root.innerHTML = ''
     return (root.appendChild(renderItems(newArray)));
