@@ -53,7 +53,7 @@ export const Stats2 = (data, inventarioPaises) => {
   const porcenS = porcentaje.toString ();
   const porcenC = parseInt(porcenS, 10);
   console.log(mapeo);
-  return porcenC.toFixed(2);
+  return porcenC;
 };
 
 export const computeStats = (filteredData) => {
@@ -74,7 +74,7 @@ function addHtmlestadisticas(datosPromedio) {
   const p = document.createElement("p"); //creamos el parrafo para insertar en la seccion
   p.id = "parrafoStats";
   p.innerText =
-    "La extensión territorial de la opción seleccionada es de de: " +
+    "El promedio de la extensión territorial entre los países seleccionados es de de: " +
     datosPromedio.toFixed(2) +
     " kilómetros cuadrados.";
   p.classList.add("centrado"); //le asignamos la clase al parrafo
