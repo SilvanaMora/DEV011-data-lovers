@@ -45,8 +45,6 @@ function limpiarTexto() {
 
 const selectContinents = document.getElementById("continents");
 selectContinents.addEventListener("change", (event) => {
-  const prueba = document.querySelector('#claseContenedorDeCartas')
-  prueba.innerHTML = "";
   const selectSort = document.getElementsByName("asc-desc")[0];
   //console.log(selectSort.value);
   const valueSelected = event.target.value;
