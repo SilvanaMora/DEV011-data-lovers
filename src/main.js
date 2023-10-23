@@ -3,8 +3,7 @@ import { renderItems } from "./view.js";
 import { filterData } from "./dataFunctions.js";
 import { SortData } from "./dataFunctions.js";
 import { BuscarPais } from "./dataFunctions.js";
-import { computeStats } from "./dataFunctions.js";
-console.log(SortData(data.countries, "name"));
+//console.log(SortData(data.countries, "name"));
 
 document.getElementById("inicio").onclick = function () {
   document.getElementById("portada").style.display = "none";
@@ -32,12 +31,12 @@ function limpiarTexto() {
   const inputSelection = document.getElementById("continents");
   const inputSelectionOrden = document.getElementById("asc-desc");
   inputText.value = "";
-  inputSelection.value = "nada"; //Establece el valor del input en una cadena vacía para borrar el texto.
-  inputSelectionOrden.value = "nada";
+  inputSelection.value = ""; //Establece el valor del input en una cadena vacía para borrar el texto.
+  inputSelectionOrden.value = "";
   const allData1 = renderItems(data.countries);
-  console.log(data.countries);
+  //console.log(data.countries);
   document.querySelector("#root").innerHTML = allData1;
-  console.log("h", 2);
+  //console.log("h", 2);
 }
 
 // function BuscarPais() {
@@ -46,8 +45,10 @@ function limpiarTexto() {
 
 const selectContinents = document.getElementById("continents");
 selectContinents.addEventListener("change", (event) => {
+  const prueba = document.querySelector('#claseContenedorDeCartas')
+  prueba.innerHTML = "";
   const selectSort = document.getElementsByName("asc-desc")[0];
-  console.log(selectSort.value);
+  //console.log(selectSort.value);
   const valueSelected = event.target.value;
   let newArray = [];
   const dataFilteredByContinent = filterData(
@@ -55,7 +56,7 @@ selectContinents.addEventListener("change", (event) => {
     "continents",
     valueSelected
   );
-  console.log(valueSelected);
+  //console.log(valueSelected);
   if (selectSort.value !== "nada" && valueSelected) {
     newArray = SortData(dataFilteredByContinent, "name", selectSort.value);
   }
@@ -81,12 +82,12 @@ selectSort.addEventListener("change", () => {
     "continents",
     valueSelected
   );
-  console.log(valueSelected);
+  //console.log(valueSelected);
   if (valueSelected) {
     filterData(resultadoSort, "continents", valueSelected);
     newArray = SortData(dataFilteredByContinent, "name", selectSort.value);
     return (root.innerHTML = renderItems(newArray));
   }
   root.innerHTML = renderItems(resultadoSort);
-  console.log(resultadoSort);
+  //console.log(resultadoSort);
 });
