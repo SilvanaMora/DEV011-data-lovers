@@ -1,6 +1,6 @@
 import data from "./data/countries/countries.js";
 import { renderItems } from "./view.js";
-import { filterData } from "./dataFunctions.js";
+import { filterData, computeStats } from "./dataFunctions.js";
 import { SortData } from "./dataFunctions.js";
 import { BuscarPais } from "./dataFunctions.js";
 //console.log(SortData(data.countries, "name"));
@@ -42,6 +42,8 @@ function limpiarTexto() {
 // function BuscarPais() {
 
 // function selectContinents () {
+  
+
 
 const selectContinents = document.getElementById("continents");
 selectContinents.addEventListener("change", (event) => {
@@ -54,6 +56,7 @@ selectContinents.addEventListener("change", (event) => {
     "continents",
     valueSelected
   );
+  computeStats(dataFilteredByContinent)
   //console.log(valueSelected);
   if (selectSort.value !== "nada" && valueSelected) {
     newArray = SortData(dataFilteredByContinent, "name", selectSort.value);
@@ -80,6 +83,7 @@ selectSort.addEventListener("change", () => {
     "continents",
     valueSelected
   );
+  computeStats(dataFilteredByContinent)
   //console.log(valueSelected);
   if (valueSelected) {
     filterData(resultadoSort, "continents", valueSelected);

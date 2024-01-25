@@ -37,12 +37,12 @@ export const BuscarPais = (data) => {
 };
 
 let newData = [];
-export function filterData(data, filterBy, selectedValue) {
+export function filterData(data, filterBy, selectedValue = "asc") {
   const filteredData = data.filter((pais) => {
     return pais[filterBy].includes(selectedValue);
   });
   // console.log(filteredData);
-  computeStats(filteredData); //para que haga el calculo con la data filtrada
+  // computeStats(filteredData); //para que haga el calculo con la data filtrada
   newData = filteredData
   return filteredData;
 }
@@ -67,6 +67,7 @@ export const computeStats = () => {
 function addHtmlestadisticas(datosPromedio) {
   //recibe el valor del promedio del area de los paises
   const sectionStats = document.getElementById("porcentajes"); //selecciona la seccion donde insertar HTML
+  sectionStats.innerHTML = ""; //limpiar la pizarra
   const p = document.createElement("p"); //creamos el parrafo para insertar en la seccion
   p.innerHTML =
   "El promedio del área de los paises del continente seleccionado es: " +
