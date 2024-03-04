@@ -8553,36 +8553,7 @@ export default {
         "alt": "The flag of Switzerland is square shaped. It features a white Swiss cross centered on a red field."
       }
     },
-    {
-      "name": {
-        "common": "Åland Islands",
-        "official": "Åland Islands"
-      },
-      "tld": [
-        ".ax"
-      ],
-      "independent": false,
-      "capital": [
-        "Mariehamn"
-      ],
-      "subregion": "Northern Europe",
-      "languages": {
-        "swe": "Swedish"
-      },
-      "area": 1580,
-      "flag": "🇦🇽",
-      "population": 29458,
-      "timezones": [
-        "UTC+02:00"
-      ],
-      "continents": [
-        "Europe"
-      ],
-      "flags": {
-        "png": "https://flagcdn.com/w320/ax.png",
-        "svg": "https://flagcdn.com/ax.svg"
-      }
-    },
+   
     {
       "name": {
         "common": "Benin",
