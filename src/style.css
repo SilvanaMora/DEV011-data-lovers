@@ -128,7 +128,7 @@
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
-.card.active {
+/* .card.active {
   transform: rotate(180deg);
   transition-duration: 10s;
 }
@@ -139,7 +139,7 @@
 
 .card {
   perspective: 1000px;
-}
+} */
 
 .back {
   width: 150px; /* Define el ancho de cada tarjeta (ajustable según las columnas deseadas) */
