@@ -1,60 +1,79 @@
-
 <!DOCTYPE html5>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <header>
-      <div id ="portada" class="contenedor">
-       
-          <h1 id="titulo">"Bienvenid@s a Geografía para curiosos"</h1>
-          <h2 id="subtitulo"> A continuación encontrarás datos interesantes de cualquier país de tu interés </h2>
-           <div class = "loggin" id="portada2" ></div>
-           <img id="gifPaises" src="https://upload.wikimedia.org/wikipedia/commons/9/96/Mundo_hecho_de_Banderas.gif">
-           <button id="inicio"> Iniciar </button>
-          </div>
-       
+      <div id="portada" class="contenedor">
+        <h1 id="titulo">"Bienvenid@s a Geografía para curiosos"</h1>
+        <h2 id="subtitulo">
+          A continuación encontrarás datos interesantes de cualquier país de tu
+          interés
+        </h2>
+        <div class="loggin" id="portada2"></div>
+        <img
+          id="gifPaises"
+          src="https://upload.wikimedia.org/wikipedia/commons/9/96/Mundo_hecho_de_Banderas.gif"
+        />
+        <button id="inicio">Iniciar</button>
+      </div>
     </header>
 
-<div class="wrapper contenedor" id="contenedorFunciones" style="display:none">
-    <h1 id="tituloPag2">"IL MONDO LOVERS"</h1>
-      
-    <div id="contenedorDeFormulario">
-      <h2 class = "subtituloPag2">¿Te gustaría conocer información básica de los diferentes países del mundO?</h2> 
-      <p>Si deseas realizar una búsqueda específica, puedes apoyarte en el siguiente buscador:</p>
-      <label for = "busqueda-nombre">
-        <input type ="text" id = "textoIngresado" placeholder="Ingresa el nombre del país:"/></label> 
-        <!-- <button id = "buscar"> Buscar </button> -->
-       
-        <button id = "limpiar" data-testid = "select-limpiar"> Limpiar </button>
-    </div>
+    <div
+      class="wrapper contenedor"
+      id="contenedorFunciones"
+      style="display: none"
+    >
+      <h1 id="tituloPag2">"IL MONDO LOVERS"</h1>
+
+      <div id="contenedorDeFormulario">
+        <h2 class="subtituloPag2">
+          ¿Te gustaría conocer información básica de los diferentes países del
+          mundO?
+        </h2>
+        <p>
+          Si deseas realizar una búsqueda específica, puedes apoyarte en el
+          siguiente buscador:
+        </p>
+        <label for="busqueda-nombre">
+          <input
+            type="text"
+            id="textoIngresado"
+            placeholder="Ingresa el nombre del país:"
+        /></label>
+        <button id="buscar">Buscar</button>
+
+        <button id="limpiar" data-testid="select-limpiar">Limpiar</button>
+      </div>
 
       <!-- <label for= "name" data-testid="select-filter"></label> -->
       <nav id="contenedorDeFiltrado">
         <p>Filtrar por:</p>
-       
-        <label for = "asc-desc"> 
+        <label for="continents"
+          >Continentes:
+          <select name="continents" id="continents" data-testid="select-filter">
+            <option value="nada">Selecciona un continente</option>
+            <option value="Africa">África</option>
+            <option value="America">América</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europa</option>
+            <option value="Oceania">Oceanía</option>
+            <option value="Antarctica">Antartica</option>
+          </select></label
+        >
+        <label for="asc-desc">
           <select name="asc-desc" id="asc-desc" data-testid="select-filter">
-            <option value="nada" selected >Seleccione una opción:</option>
-            <option value="asc">  A - Z </option>
-            <option value="desc"> Z - A </option>
+            <option selected>Seleccione una opción:</option>
+            <option value="asc">A - Z</option>
+            <option value="desc">Z - A</option>
           </select>
         </label>
-        <label for = "continents">Continentes: <select name="continents" id="continents" data-testid="select-filter" > 
-          <option value="nada"> Selecciona un continente </option>
-          <option value="Africa">África</option>
-          <option value="America">América</option>
-          <option value="Asia">Asia</option>
-          <option value="Europe">Europa</option>
-          <option value="Oceania">Oceanía</option>
-          <option value="Antarctica">Antartica</option>
-        </select></label>
-        <label for ="subregion">Subregión:<select name="subregion" data-testid="select-sort"> 
+        <!--<label for ="subregion">Subregión:<select name="subregion" data-testid="select-sort"> 
         <option value="Norte América">Norte América</option>
         <option value ="Centro América">Centro América</option>
         <option value ="Sudamérica">Sudamérica</option>
@@ -72,19 +91,20 @@
         <label for = "independent"> Status político: <select name="independent" data-testid="select-status"> 
         <option value = "Idependiente"> Idependiente </option>
         <option value = "Otro"> Otro </option>
-      </select></label>
-      </nav> 
-  <div id ="contenedorDeCartas">
-  <section id="porcentajes"></section>   
-  <section > 
-  <article id="root" class="claseContenedorDeCartas">
-  </article>
-  </section> 
-  </div>
-</div>
-<div id="fotter">
-<footer id ="piePagina"><em> Autoras: Silvana Mora y Angélica Ríos.</em></footer>
-</div>
-<script src="main.js" type="module"></script>
-</body>
+      </select></label>-->
+      </nav>
+      <div id="contenedorDeCartas">
+        <section id="porcentajes"></section>
+        <section>
+          <article id="root" class="claseContenedorDeCartas"></article>
+        </section>
+      </div>
+    </div>
+    <div id="fotter">
+      <footer id="piePagina">
+        <em> Autoras: Silvana Mora y Angélica Ríos.</em>
+      </footer>
+    </div>
+    <script src="main.js" type="module"></script>
+  </body>
 </html>

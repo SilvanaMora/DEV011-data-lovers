@@ -1,180 +1,206 @@
-
 #portada {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #052c31;
+  background-color: #efd3bb;
 }
 
-#tituloPag2{
-
-background-image: url('https://rea.ceibal.edu.uy/elp/el-mundo-del-globo-al-plano/map-of-the-world-2401458_1280.jpg');
-
- 
+#tituloPag2 {
+  background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fbr.freepik.com%2Fvetores-premium%2Fmapa-mundi-em-estilo-antigo-em-formato-vetorial-graficos-em-marrom-em-estilo-retro_19141439.htm&psig=AOvVaw3bhEuYlzGX8JmH6QZlUE4Q&ust=1696500816744000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOioypaU3IEDFQAAAAAdAAAAABAR");
+  text-align: center;
 }
 
 #titulo {
-    text-align: center;
-    font-size: 2em;
-    color: white;
-    
-  }
-  
-  #subtitulo {
-    text-align: center;
-    font-size: 1em;
-    color: white;
-  }
+  text-align: center;
+  font-size: 2em;
+  color: white;
+  background-color: #553a2b;
+  padding-inline: 555px;
+}
 
-  #inicio:hover {
-    background-color: rgb(106, 204, 41);/* Cambia el color a tu elección cuando el cursor esté sobre el botón */
-  }
-  #inicio {
-    background-color: rgba(100, 72, 10, 0.733);
-    
-      color: white;
-      font-size: 3em;
-      padding: 0.3em;
-      border: 3 em;
-      border-radius: 9%; 
-      border-color: #ec9a1eb6;
-      cursor: pointer;
-      text-align: center;
-      margin-bottom: 2em;
-      
-    }
-    
-    #gifPaises {
-        margin: 0 auto;
-        width: 300px; /* Cambia el valor a la anchura deseada */
-        height: auto; /* Mantén la relación de aspecto original */
-      }
-      
+#subtitulo {
+  text-align: center;
+  font-size: 2em;
+  color: white;
+  background-color: #553a2b;
+  padding-inline: 378px;
+}
+
+#inicio:hover {
+  background-color: rgb(
+    182,
+    108,
+    108
+  ); /* Cambia el color  cuando el cursor esté sobre el botón */
+}
+#inicio {
+  background-color: rgba(100, 72, 10, 0.733);
+
+  color: white;
+  font-size: 3em;
+  padding: 0.3em;
+  border: 3 em;
+  border-radius: 9%;
+  border-color: #ec9a1eb6;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+#gifPaises {
+  margin: 0 auto;
+  width: 300px; /* Cambia el valor a la anchura deseada */
+  height: auto; /* Mantén la relación de aspecto original */
+}
+
 .contenedorBotones {
   text-align: center;
 }
 
-  #limpiar {
-    background-color: rgb(133, 33, 228);
-    color: white;
-    font-size: 20px;
-    padding: 10px;
-    margin: 0 auto;
-    border: 0px solid;
-    cursor: pointer;
-    
-  }
-  
-  #buscar {
-    background-color: rgb(84, 184, 159);
-    color: white;
-    font-size: 20px;
-    padding: 10px;
-    margin: 0 auto;
-    border: 0px solid;
-    cursor: pointer;
-    
-  }
-  
+#limpiar {
+  background-color: rgb(182, 108, 108);
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  margin: 0 auto;
+  border: 0px solid;
+  cursor: pointer;
+  border-radius: 20px;
+}
 
-  #contenedorDeFiltrado {
-    font-size: 16px; /* Tamaño del texto */
-    font-family:  monospace;
-    background-image: linear-gradient(to bottom, #f1ece7c9, #d9e78ace);    text-align: center; /* Alinea el texto al centro */
- 
-  }
-  #titulo{
-    font-size: 16px; /* Tamaño del texto */
-    font-family:  monospace;
+#buscar {
+  background-color: rgb(182, 108, 108);
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  margin: 0 auto;
+  border: 0px solid;
+  cursor: pointer;
+  border-radius: 20px;
+}
 
-  }
-  #contenedorDeFormulario {
-    font-size: 16px; /* Tamaño del texto */
-    font-family:  monospace;
-    background-image: linear-gradient(to bottom, #f1ece7c9, #d9e78ace);    text-align: center; /* Alinea el texto al centro */
- 
-  }
-  #contenedorDeFiltrado {
-   /* position: relative; Para que el height: 100% funcione correctamente */
-    /*min-height:;  Establece la altura mínima al 100% del viewport */
-    background-color: #35b346; /* Cambia el color de fondo según tus preferencias */
-  
-  }
+#contenedorDeFiltrado {
+  font-size: 16px; /* Tamaño del texto */
+  font-family: monospace;
+  background-image: linear-gradient(to bottom, #ac7659, #553a2b);
+  text-align: center; /* Alinea el texto al centro */
+  color: white;
+}
+#titulo {
+  font-size: 16px; /* Tamaño del texto */
+  font-family: monospace;
+}
+#contenedorDeFormulario {
+  font-size: 16px; /* Tamaño del texto */
+  font-family: monospace;
+  background-image: linear-gradient(to bottom, #f1ece7c9, #efd3bb);
+  text-align: center; /* Alinea el texto al centro */
+}
+#contenedorDeFiltrado {
+  /* position: relative; Para que el height: 100% funcione correctamente */
+  /*min-height:;  Establece la altura mínima al 100% del viewport */
+  background-color: #35b346; /* Cambia el color de fondo según tus preferencias */
+}
 
-  
-  .contenedorDeCartas {
+.contenedorDeCartas {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Espaciado uniforme entre las tarjetas en la fila */ 
+  justify-content: space-between; /* Espaciado uniforme entre las tarjetas en la fila */
   columns: 5;
   flex-direction: column;
   align-items: center;
- 
 }
 .card {
-    width: 150px; /* Define el ancho de cada tarjeta (ajustable según las columnas deseadas) */
+  width: 150px; /* Define el ancho de cada tarjeta (ajustable según las columnas deseadas) */
   margin-bottom: 5px;
   height: 250px; /* Reduce la altura de la tarjeta */
   border: 1px solid #f4f6f8;
-  background-color: #99c0ee;
+  background-color: #efd3bb;
   padding: 10px;
   margin: 10px;
   border-radius: 33px;
   text-align: center;
   justify-content: center;
   align-items: center;
-
+  cursor: pointer;
+  perspective: 1000px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5);
 }
-  
-  .card h2 {
-    font-size: 18px;
-    margin-bottom: 5px;
 
-  }
-  
-  .card p {
-    font-size: 14px;
-    
-  }
-  
-  .card img {
-    max-width: 90px;
-    height: 60px;
-    
-  }
+/* .card.active {
+  transform: rotate(180deg);
+  transition-duration: 10s;
+}
 
-  .marcoCartas {
-    width: 200px; /* Define el ancho de cada tarjeta (ajustable según las columnas deseadas) */
-    margin-bottom: 5px;
-    margin-top: 50px;
-    height: 300px; /* Reduce la altura de la tarjeta */
-    border: 1px solid #e4e40c;
-    background-color: #f7ed67;
-    padding: 5px 3px 5px 5px;
-    text-align: center;
-  }
+.card:hover {
+  transform: rotate(180deg);
+}
 
+.card {
+  perspective: 1000px;
+} */
 
+.back {
+  width: 150px; /* Define el ancho de cada tarjeta (ajustable según las columnas deseadas) */
+  margin-bottom: 5px;
+  height: 250px; /* Reduce la altura de la tarjeta */
+  border: 1px solid #f4f6f8;
+  background-color: #efd3bb;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 33px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  perspective: 1000px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5);
+}
 
-  .claseContenedorDeCartas {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: space-between; 
-    columns: 5;   
-    flex-direction: row;
-    
-    
-  }
+.card h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
 
-    
-  #piePagina  {
-    font-size: 1rem;
-    color: rgb(53, 4, 42); /* Cambia el color del texto dentro de <em> */
-   background-color: #e4e40c;
-  }
+.card p {
+  font-size: 14px;
+}
 
-  /* Estilos para tamaños de pantalla grandes (por defecto) */
+.card img {
+  max-width: 90px;
+  height: 60px;
+}
+
+.marcoCartas {
+  width: 200px; /* Define el ancho de cada tarjeta (ajustable según las columnas deseadas) */
+  margin-bottom: 5px;
+  margin-top: 50px;
+  height: 300px; /* Reduce la altura de la tarjeta */
+  border: 1px solid #ba8469;
+  background-color: #553a2b;
+  padding: 5px 3px 5px 5px;
+  text-align: center;
+  border-radius: 33px;
+}
+
+.claseContenedorDeCartas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  columns: 5;
+  flex-direction: row;
+}
+
+#piePagina {
+  font-size: 1rem;
+  color: rgb(53, 4, 42); /* Cambia el color del texto dentro de <em> */
+  background-color: #553a2b;
+  color: white;
+  text-align: center;
+}
+
+/* Estilos para tamaños de pantalla grandes (por defecto) */
 #titulo {
   font-size: 33px; /* Tamaño de fuente más grande para pantallas grandes */
 }
@@ -187,23 +213,27 @@ background-image: url('https://rea.ceibal.edu.uy/elp/el-mundo-del-globo-al-plano
 /* Media query para pantallas medianas (de 768px a 1024px de ancho) */
 @media (min-width: 768px) and (max-width: 1024px) {
   #titulo {
-      font-size: 18px; /* Tamaño de fuente más pequeño para pantallas medianas */
+    font-size: 18px; /* Tamaño de fuente más pequeño para pantallas medianas */
   }
 
   .card {
-      width: 120px; /* Ancho de tarjeta más pequeño para pantallas medianas */
-      height: 200px; /* Altura de tarjeta más pequeña para pantallas medianas */
+    width: 120px; /* Ancho de tarjeta más pequeño para pantallas medianas */
+    height: 200px; /* Altura de tarjeta más pequeña para pantallas medianas */
   }
 }
 
 /* Media query para pantallas pequeñas (menos de 768px de ancho) */
 @media (max-width: 767px) {
   #titulo {
-      font-size: 16px; /* Tamaño de fuente aún más pequeño para pantallas pequeñas */
+    font-size: 16px; /* Tamaño de fuente aún más pequeño para pantallas pequeñas */
   }
 
   .card {
-      width: 100%; /* Ancho completo para adaptarse a pantallas pequeñas */
-      height: auto; /* Altura automática para adaptarse a pantallas pequeñas */
+    width: 100%; /* Ancho completo para adaptarse a pantallas pequeñas */
+    height: auto; /* Altura automática para adaptarse a pantallas pequeñas */
   }
+}
+
+.centrado {
+  text-align: center;
 }
