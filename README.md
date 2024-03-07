@@ -19,7 +19,7 @@ En este sitio web encontrarás información como continente, área, capital y su
 3. Busca un país de tu elcción o filtra por continente. 
 4. Observa la información que te brindamos de cada país y usalo a tu favor. 
 
-## Metodologías utilizadas 
+## Herramientas y tecnologías utilizadas 
 
 1. Lenguajes de Programación:
 JavaScript (ES6): El proyecto se basa en la lógica implementada completamente en JavaScript (ES6).
