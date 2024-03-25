@@ -1,3 +1,4 @@
+
 # Data Lovers
 
 ## Presentación
@@ -19,7 +20,7 @@ En este sitio web encontrarás información como continente, área, capital y su
 3. Busca un país de tu elcción o filtra por continente. 
 4. Observa la información que te brindamos de cada país y usalo a tu favor. 
 
-## Herramientas y tecnologías utilizadas 
+## Tecnologías y herramientas utilizadas
 
 1. Lenguajes de Programación:
 JavaScript (ES6): El proyecto se basa en la lógica implementada completamente en JavaScript (ES6).
@@ -44,8 +45,7 @@ Node.js y npm: Utilizados para la gestión de dependencias y scripts del proyect
 Figma: Para la creación de prototipos de alta fidelidad. 
 
 ### ¡Bienvenidos a la aventura! 
-Click aquí  para visitarnos 
 
-¡Ayúdame a mejorar la herramienta reportando errores o sugiriendo nuevas funcionalidades! ¡Gracias por visitar Geografía para curiosos! Esperamos que disfrutes aprendiendo sobre el mundo que te rodea.
+### Click aquí  para visitarnos 
 
-Autoras: Silvana Mora y Angélica Ríos
+### ¡Ayúdame a mejorar la herramienta reportando errores o sugiriendo nuevas funcionalidades! ¡Gracias por visitar Geografía para curiosos! Esperamos que disfrutes aprendiendo sobre el mundo que te rodea.
