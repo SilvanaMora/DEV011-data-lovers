@@ -48,4 +48,3 @@ Figma: Para la creación de prototipos de alta fidelidad.
 
 ### Click aquí  para visitarnos 
 
-### ¡Ayúdame a mejorar la herramienta reportando errores o sugiriendo nuevas funcionalidades! ¡Gracias por visitar Geografía para curiosos! Esperamos que disfrutes aprendiendo sobre el mundo que te rodea.
