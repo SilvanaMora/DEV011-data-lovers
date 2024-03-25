@@ -1,3 +1,4 @@
+
 # Data Lovers
 
 ## Presentación
@@ -46,6 +47,4 @@ Figma: Para la creación de prototipos de alta fidelidad.
 ### ¡Bienvenidos a la aventura! 
 
 ### Click aquí  para visitarnos 
-
-### ¡Ayúdame a mejorar la herramienta reportando errores o sugiriendo nuevas funcionalidades! ¡Gracias por visitar Geografía para curiosos! Esperamos que disfrutes aprendiendo sobre el mundo que te rodea.
 
