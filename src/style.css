@@ -1,9 +1,9 @@
-
 #portada {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #efd3bb;
 }
 
 #tituloPag2{
@@ -153,3 +153,13 @@ background-image: url('https://rea.ceibal.edu.uy/elp/el-mundo-del-globo-al-plano
     
     
   }
+
+  .card {
+    width: 100%; /* Ancho completo para adaptarse a pantallas pequeñas */
+    height: auto; /* Altura automática para adaptarse a pantallas pequeñas */
+  }
+}
+
+.centrado {
+  text-align: center;
+}
