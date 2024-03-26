@@ -46,6 +46,7 @@
   },
   "jest": {
     "testEnvironment": "jsdom"
+<<<<<<< HEAD
   },
   "description": "* [1. Preámbulo](#1-preámbulo)\r * [2. Resumen del proyecto](#2-resumen-del-proyecto)\r * [3. Funcionalidades](#3-funcionalidades)\r * [4. Consideraciones generales](#4-consideraciones-generales)\r * [5. Consideraciones técnicas](#5-consideraciones-técnicas)\r * [6. Criterios de aceptación mínimos del proyecto](#6-criterios-de-aceptación-mínimos-del-proyecto)\r * [7. Hacker edition](#7-hacker-edition)\r * [8. Objetivos de aprendizaje](#8-objetivos-de-aprendizaje)\r * [9. Pistas, tips y lecturas complementarias](#9-pistas-tips-y-lecturas-complementarias)\r * [10. Consideraciones para pedir tu Project Feedback](#10-consideraciones-para-pedir-tu-project-feedback)",
   "directories": {
@@ -391,4 +392,7 @@
   },
   "keywords": [],
   "author": ""
+=======
+  }
+>>>>>>> origin/main
 }
