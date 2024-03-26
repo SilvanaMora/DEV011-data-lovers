@@ -10,23 +10,38 @@
   <body>
     <header>
       <div id="portada" class="contenedor">
+<<<<<<< HEAD
         <h1 id="titulo">"Bienvenid@s a Geografía para curiosos"</h1>
         <h2 id="subtitulo">
           A continuación encontrarás datos interesantes de cualquier país de tu
           interés
         </h2>
+=======
+        <h1>
+          Bienvenid@s
+        </h1>
+>>>>>>> origin/main
         <div class="loggin" id="portada2"></div>
         <img
           id="gifPaises"
           src="https://upload.wikimedia.org/wikipedia/commons/9/96/Mundo_hecho_de_Banderas.gif"
         />
         <button id="inicio">Iniciar</button>
+<<<<<<< HEAD
       </div>
+=======
+        <h2 id="subtitulo">
+          <em>Una aplicación para conocer el mundo... </em>
+        </h2>
+      </div>
+      <br>
+>>>>>>> origin/main
     </header>
 
     <div
       class="wrapper contenedor"
       id="contenedorFunciones"
+<<<<<<< HEAD
       style="display: none"
     >
       <h1 id="tituloPag2">"IL MONDO LOVERS"</h1>
@@ -105,6 +120,74 @@
         <em> Autoras: Silvana Mora y Angélica Ríos.</em>
       </footer>
     </div>
+=======
+      style="display:none"
+    >
+      <div id="viñeta">
+        <h2 id="tituloPag2">
+          <img
+            id="mundito"
+            src="https://4.bp.blogspot.com/-iVZ7bJW5NXE/WPTfAG9DgdI/AAAAAAAAF88/2Qc5zPs2dTch5-xtU9fbeO1YWpMRSThnwCLcB/s400/DUNIA%2B1.jpg"
+          />
+          Geografía para Curios@s...
+        </h2>
+      </div>
+
+      <div id="contenedorDeFormulario">
+        <p class="subtituloPag2">
+          ¿<b>Sabías que</b> los países que integran
+          <b>América Latina </b> representan el <b> 8.06 % </b> del total de
+          países en el mundo, y, que <b>Asia</b> es el continente
+          <b>más poblado </b> ?
+        </p>
+      </div>
+
+      <!-- <label for= "name" data-testid="select-filter"></label> -->
+      <nav class="contenedorSelectores">
+        <label id="busquedaNombre" for="busqueda-nombre">
+          Buscar por nombre:
+          <input
+            type="text"
+            id="textoIngresado"
+            placeholder="Ingresa el nombre del país"
+          />
+        </label>
+
+        <label for="continents" class="contenedorSelectores"> </label>
+        <select name="continents" id="continents" data-testid="select-filter">
+          <option value="nada">Selecciona un continente</option>
+          <option value="Africa">África</option>
+          <option value="America">América</option>
+          <option value="Asia">Asia</option>
+          <option value="Europe">Europa</option>
+          <option value="Oceania">Oceanía</option>
+          <option value="Antarctica">Antartica</option>
+        </select>
+        <label for="asc-desc"> </label>
+        <select name="asc-desc" id="asc-desc" data-testid="select-filter">
+          <option value="nada" selected>Ordenar</option>
+          <option value="asc">A - Z</option>
+          <option value="desc">Z - A</option>
+        </select>
+        <button id="limpiar" data-testid="select-limpiar">Limpiar</button>
+      </nav>
+      <article class="articulos" id="estadisticas">
+        <h3 id="porcent"></h3>
+        <div id="porcentajeArea"></div>
+      </article>
+
+      <div id="contenedorDeCartas">
+        <section id="porcentajes"></section>
+        <section>
+          <article id="root" class="claseContenedorDeCartas">
+          </article>
+        </section>
+      </div>
+    </div>
+
+    <footer><em> Autoras: Silvana Mora y Angélica Ríos. </em></footer>
+
+>>>>>>> origin/main
     <script src="main.js" type="module"></script>
   </body>
 </html>
