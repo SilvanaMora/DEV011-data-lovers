@@ -19,7 +19,7 @@ En este sitio web encontrarás información como continente, área, capital y su
 3. Busca un país de tu elcción o filtra por continente. 
 4. Observa la información que te brindamos de cada país y usalo a tu favor. 
 
-## Metodologías utilizadas 
+## Metodologías y herramientas utilizadas 
 
 1. Lenguajes de Programación:
 JavaScript (ES6): El proyecto se basa en la lógica implementada completamente en JavaScript (ES6).
@@ -48,4 +48,3 @@ Click aquí  para visitarnos
 
 ¡Ayúdame a mejorar la herramienta reportando errores o sugiriendo nuevas funcionalidades! ¡Gracias por visitar Geografía para curiosos! Esperamos que disfrutes aprendiendo sobre el mundo que te rodea.
 
-Autoras: Silvana Mora y Angélica Ríos
