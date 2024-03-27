@@ -1,80 +1,50 @@
-
 # Data Lovers
 
-## Índice
+## Presentación
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Funcionalidades](#3-funcionalidades)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Consideraciones técnicas](#5-consideraciones-técnicas)
-* [6. Criterios de aceptación mínimos del proyecto](#6-criterios-de-aceptación-mínimos-del-proyecto)
-* [7. Hacker edition](#7-hacker-edition)
-* [8. Objetivos de aprendizaje](#8-objetivos-de-aprendizaje)
-* [9. Pistas, tips y lecturas complementarias](#9-pistas-tips-y-lecturas-complementarias)
-* [10. Consideraciones para pedir tu Project Feedback](#10-consideraciones-para-pedir-tu-project-feedback)
+Bienvenidos a Geografía para curiosos, es una página web donde podras encontrar información geográfica de cualquier país de tu interes. 
 
-***
+### ¿Te interesa el mundo que te rodea? ¿Te preguntas cómo es el planeta Tierra? ¿Quieres aprender más sobre la geografía de algún país?
 
-## 1. Preámbulo
+Si es así, estás en el lugar correcto. Geografía para curiosos es un sitio web dedicado a difundir la geografía de manera sencilla y accesible.
 
-Según [Forbes](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read),
-el 90% de la data que existe hoy ha sido creada durante los últimos dos años.
-Cada día generamos 2.5 millones de terabytes de datos, una cifra sin
-precedentes.
+## ¿Qué información geográfica encontraré? 
 
-No obstante, los datos por sí mismos son de poca utilidad. Para que esas
-grandes cantidades de datos se conviertan en **información** fácil de leer para
-los usuarios, necesitamos entender y procesar estos datos. Una manera simple de
-hacerlo es creando _interfaces_ y _visualizaciones_.
+En este sitio web encontrarás información como continente, área, capital y subregión de cualquier país de tu interes. 
 
-En la siguiente imagen, podrás ver cómo con la data que que se ve en la parte
-izquierda se puede construir una interfaz amigable y entendible por las
-usuarias, al lado derecho.
+## Modo de uso
 
-![pokemon-data-to-ui](https://user-images.githubusercontent.com/12631491/218505816-c6d11758-9de4-428f-affb-2a56ea4d68c4.png)
+1. Ingresa al link de nuestra página web.
+2. Da click en iniciar.
+3. Busca un país de tu elcción o filtra por continente. 
+4. Observa la información que te brindamos de cada país y usalo a tu favor. 
 
-## Tecnologías y herramientas utilizadas
+## Metodologías y herramientas utilizadas 
 
-En este proyecto **construirás una _página web_ para visualizar un
-_conjunto (set) de datos_** que se adecúe a lo que descubras que tu usuaria
-necesita.
+1. Lenguajes de Programación:
+JavaScript (ES6): El proyecto se basa en la lógica implementada completamente en JavaScript (ES6).
 
-Como entregable final tendrás una página web que permita **visualizar la data,
-filtrarla, ordenarla y y calcular alguna estadística**. Con estadística
-nos referimos a distintos cálculos que puedes hacer con la data para mostrar
-información aún más relevante para los usuarios (promedio, el valor máximo
-o mínimo, etc).
+2. Tecnologías Front-end:
+HTML: Se utiliza para estructurar el contenido de la página web, incluyendo la implementación semántica con microdatos.
+CSS: Utilizado para estilizar la interfaz de usuario y asegurar que sea responsive en diferentes tamaños de pantalla.
 
-Esta vez te proponemos una serie de datos de diferentes _temáticas_ para que
-explores y decidas con qué temática te interesa trabajar. Hemos elegido
-específicamente estos sets de datos porque creemos que se adecúan bien a esta
-etapa de tu aprendizaje.
+3. Herramientas de Desarrollo:
 
-Una vez que definas tu área de interés, busca entender quién es tu usuaria y qué
-necesita saber o ver exactamente; luego podrás construir la interfaz que
-le ayude a interactuar y entender mejor esos datos.
+Git: Utilizado para el control de versiones del código.
+GitHub: Plataforma utilizada para alojar el repositorio del proyecto y para colaboración en el desarrollo.
+GitHub Pages: Utilizado para desplegar la interfaz web del proyecto.
 
-Estos son datos que te proponemos:
+4. Testing:
+Jest: Framework de pruebas unitarias para evaluar las funciones implementadas en el archivo dataFunctions.js.
 
-* [Pokémon](src/data/pokemon/pokemon.json):
-  En este set encontrarás una lista con los 251 Pokémon de la región de Kanto
-  y Johto, junto con sus respectivas estadísticas usadas en el juego
-  [Pokémon GO](http://pokemongolive.com).
-  - [Investigación con jugadores de Pokémon Go](src/data/pokemon/README.md)
+5. Gestión de Dependencias:
+Node.js y npm: Utilizados para la gestión de dependencias y scripts del proyecto.
 
-* [League of Legends - Challenger leaderboard](src/data/lol/lol.json):
-  Este set de datos muestra la lista de campeones en una liga del
-  juego League of Legends (LoL).
-  - [Investigación con jugadores de LoL](src/data/lol/README.md)
+7. Diseño de la Interfaz de Usuario:
+Figma: Para la creación de prototipos de alta fidelidad. 
 
-* [Rick and Morty](src/data/rickandmorty/rickandmorty.json).
-  Este set nos proporciona la lista de los personajes de la serie Rick and
-  Morty. [API Rick and Morty](https://rickandmortyapi.com).
-  - [Investigación con seguidores de Rick and Morty](src/data/rickandmorty/README.md)
+### ¡Bienvenidos a la aventura! 
+Click aquí  para visitarnos 
 
-* [Juegos Olímpicos de Río de Janeiro](src/data/athletes/athletes.json).
-  Este set nos proporciona la lista de los atletas que ganaron medallas en
-  las olimpiadas de Río de Janeiro.
-  - [Investigación con interesados en juegos olímpicos de Río de Janeiro](src/data/athletes/README.md)
+¡Ayúdame a mejorar la herramienta reportando errores o sugiriendo nuevas funcionalidades! ¡Gracias por visitar Geografía para curiosos! Esperamos que disfrutes aprendiendo sobre el mundo que te rodea.
 

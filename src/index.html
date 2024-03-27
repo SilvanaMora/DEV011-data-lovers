@@ -1,12 +1,11 @@
-
 <!DOCTYPE html5>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <header>
@@ -55,33 +54,33 @@
       <!-- <label for= "name" data-testid="select-filter"></label> -->
       <nav id="contenedorDeFiltrado">
         <p>Filtrar por:</p>
-       
-        <label for = "asc-desc"> 
-          <select name="asc-desc" id="orden"      data-testid="select-sort">
-            <option value="">Selecione una opción:</option>
-            <option value="asc">  A - Z </option>
-            <option value="desc"> Z - A </option>
+        <label for="continents"
+          >Continentes:
+          <select name="continents" id="continents" data-testid="select-filter">
+            <option value="nada">Selecciona un continente</option>
+            <option value="Africa">África</option>
+            <option value="America">América</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europa</option>
+            <option value="Oceania">Oceanía</option>
+            <option value="Antarctica">Antartica</option>
+          </select></label
+        >
+        <label for="asc-desc">
+          <select name="asc-desc" id="asc-desc" data-testid="select-filter">
+            <option selected>Seleccione una opción:</option>
+            <option value="asc">A - Z</option>
+            <option value="desc">Z - A</option>
           </select>
         </label>
-        
-        <label for = "continents">Continentes: <select name="continents" id="continents" data-testid="select-continent"> 
-          <option value="nada">Selecione un Continente:</option>
-          <option value="Africa">África</option>
-          <option value="America">América</option>
-          <option value="Asia">Asia</option>
-          <option value="Europe">Europa</option>
-          <option value="Oceania">Oceanía</option>
-          <option value="Antarctica">Antartica</option>
-        </select></label>
-        
-        <label for ="subregion">Subregión:<select name="subregion" data-testid="select-subregion"> 
+        <!--<label for ="subregion">Subregión:<select name="subregion" data-testid="select-sort"> 
         <option value="Norte América">Norte América</option>
         <option value ="Centro América">Centro América</option>
         <option value ="Sudamérica">Sudamérica</option>
         <option value = "Europa Oriental">Europa Oriental</option>
         <option value = "Europa Occidental">Europa Occidental</option>
        </select></label>
-       <label for = "languages">Lenguaje: <select name="languages" data-testid="select-lenguaje"> 
+       <label for = "languages">Lenguaje: <select name="languages" data-testid="select-something"> 
         <option value  = "Español"> Español </option>
         <option value  = "Inglés"> Inglés </option>
         <option value  = "Francés"> Francés </option>

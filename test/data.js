@@ -1,6 +1,5 @@
 // Aqui puedes agregar los datos que necesites para tus pruebas
 // al menos debe tener uno que se llame "data"
-<<<<<<< HEAD
 
 export const data = [
   {

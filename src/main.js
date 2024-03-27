@@ -1,6 +1,4 @@
 import data from "./data/countries/countries.js";
-import { filterData } from "./dataFunctions.js";
-import { sortData } from "./dataFunctions.js";
 import { renderItems } from "./view.js";
 import { filterData, computeStats } from "./dataFunctions.js";
 import { SortData } from "./dataFunctions.js";
@@ -29,7 +27,16 @@ function pintarBuscarPais() {
 }
 
 function limpiarTexto() {
-  inputText.value = ""; // Establece el valor del input en una cadena vacía para borrar el texto.
+  const inputText = document.getElementById("textoIngresado");
+  const inputSelection = document.getElementById("continents");
+  const inputSelectionOrden = document.getElementById("asc-desc");
+  inputText.value = "";
+  inputSelection.value = ""; //Establece el valor del input en una cadena vacía para borrar el texto.
+  inputSelectionOrden.value = "";
+  const allData1 = renderItems(data.countries);
+  //console.log(data.countries);
+  document.querySelector("#root").innerHTML = allData1;
+  //console.log("h", 2);
 }
 
 // function BuscarPais() {
@@ -60,22 +67,11 @@ selectContinents.addEventListener("change", (event) => {
   );
 });
 
-//const order = document.getElementById("orden-ascendete");
-//selectOrder.addEventListener("change", (event) => {
-//console.log(event.target.value, data);
-//const valueSelected = event.target.value;
-//const dataSortBycommon = sortData(data.countries.name "common", valueSelected
-//);
-//root.innerHTML = renderItems(dataSortBycommon);
-//});
+// function selectContinents () {
+const root = document.getElementById("root");
 
-const selectOrdenar = document.getElementById("orden");
-selectOrdenar.addEventListener("change", () => {
-  const sortOrder = selectOrdenar.value;
-  console.log(sortOrder);
-
-  // Ordena los datos.
-  const sortedData = sortData(data.countries.name, "common", sortOrder);
+const dataOrdenado = data.countries;
+const selectSort = document.getElementsByName("asc-desc")[0];
 
 selectSort.addEventListener("change", () => {
   const resultadoSort = SortData(dataOrdenado, "name", selectSort.value);

@@ -1,8 +1,27 @@
-// estas funciones son de ejemplo
+export function SortData(data, sortBy, sortOrder) {
+  const ordenDeDatos = [...data];
+  ordenDeDatos.sort((a, b) => {
+    if (sortOrder === "asc") {
+      if (a[sortBy].common < b[sortBy].common) {
+        return -1;
+      }
+      if (a[sortBy].common > b[sortBy].common) {
+        return 1;
+      }
+      // return 0; // En caso de que no se pueda determinar el orden
+    } else if (sortOrder === "desc") {
+      if (a[sortBy].common > b[sortBy].common) {
+        return -1;
+      }
+      if (a[sortBy].common < b[sortBy].common) {
+        return 1;
+      } //return 0; // En caso de que no se pueda determinar el orden
+    }
+  });
 
-export const example = () => {
-  return "example";
-};
+  //console.log(ordenDeDatos);
+  return ordenDeDatos;
+}
 
 // function BuscarPais() {}
 
@@ -17,7 +36,8 @@ export const BuscarPais = (data) => {
   return resultado;
 };
 
-export function filterData(data, filterBy, selectedValue) {
+let newData = [];
+export function filterData(data, filterBy, selectedValue = "asc") {
   const filteredData = data.filter((pais) => {
     return pais[filterBy].includes(selectedValue);
   });
@@ -27,21 +47,34 @@ export function filterData(data, filterBy, selectedValue) {
   return filteredData;
 }
 
-export function sortData(data, sortBy, sortOrder) {
-  if (data) {
-    return data.sort((a, b) => {
-      if (a[sortBy] < b[sortBy].common) {
-        return sortOrder === "asc" ? 1 : -1;
-      }
-      if (a[sortBy] > b[sortBy].common) {
-        return sortOrder === "desc" ? -1 : 1;
-      }
+//export const anotherExample = () => {
+//return [];
+//};
 
-      return 0;
-    });
-  } else {
-    return data;
-  }
+// function Porcentajes de continentes
+
+export const computeStats = () => {
+  //recibe los datos ya filtrados por continente
+  const dataCopia = newData;
+  const sumaArea = dataCopia.reduce((acumulador, pais) => {
+    // con reduce suma ela rea de todos los paises
+    return acumulador + pais.area;
+  }, 0);
+  const promedioArea = sumaArea / dataCopia.length; //saca promedio
+  addHtmlestadisticas(promedioArea); //llamamos a la funcion para insertar HTML y pasamos el valor del pormedio
+};
+
+function addHtmlestadisticas(datosPromedio) {
+  //recibe el valor del promedio del area de los paises
+  const sectionStats = document.getElementById("porcentajes"); //selecciona la seccion donde insertar HTML
+  sectionStats.innerHTML = ""; //limpiar la pizarra
+  const p = document.createElement("p"); //creamos el parrafo para insertar en la seccion
+  p.innerHTML =
+  "El promedio del área de los paises del continente seleccionado es: " +
+  datosPromedio; //le agregamos el texto al parrafo
+  p.classList.add("centrado"); //le asignamos la clase al parrafo
+  console.log({sectionStats});
+  sectionStats.appendChild(p); //le agregamos a la seccion el parrafo
 }
 
 // export function eliminarHtml(section) {
