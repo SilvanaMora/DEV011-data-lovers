@@ -34,7 +34,7 @@ usuarias, al lado derecho.
 
 ![pokemon-data-to-ui](https://user-images.githubusercontent.com/12631491/218505816-c6d11758-9de4-428f-affb-2a56ea4d68c4.png)
 
-## Metodologías y herramientas utilizadas 
+## Tecnologías y herramientas utilizadas
 
 En este proyecto **construirás una _página web_ para visualizar un
 _conjunto (set) de datos_** que se adecúe a lo que descubras que tu usuaria
