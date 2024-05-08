@@ -19,7 +19,7 @@
     "test:oas-web-api": "jest --verbose tests-read-only/oa/oa-web-api.spec.js",
     "open-coverage-report": "opener ./coverage/lcov-report/index.html",
     "start": "serve src/",
-    "deploy": "netlify deploy --prod"
+    "deploy": "gh-pages -d src"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
